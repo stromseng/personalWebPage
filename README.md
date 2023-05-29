@@ -40,9 +40,10 @@ You can preview the production build with `npm run preview`.
 
 ### TODO LIST
 
-- [ ] Add Created with Svelte, skeletonui, fontawesome, etc to bottom of page
-- [ ] Add github/social media links
+- [X] Add Created with Svelte, skeletonui, fontawesome, etc to bottom of page
+- [X] Add github/social media links
 - [ ] Add project examples
 - [ ] Use cool font
-- [ ] Add image of myself
-- [ ] 
+- [X] Add image of myself
+- [ ] Add cool self typing text
+

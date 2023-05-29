@@ -6,7 +6,7 @@ export default defineConfig({
 
     server: {
         fs: {
-            allow: ["/Repos/myWebPage/my-skeleton-app/public"]
+            allow: ["/Repos/myWebPage/my-skeleton-app/static"]
             }
         }
 });

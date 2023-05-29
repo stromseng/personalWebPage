@@ -7,17 +7,11 @@
 	import '../app.postcss';
 	import { AppShell, AppBar, Avatar  } from '@skeletonlabs/skeleton';
 
+	import ProfilePic from "/images/profile-pic.jpg"
+
 	//Grab URL
 	import { page } from '$app/stores';
 	
-	let path : string;
-
-    function getPath(currentPath : string) {
-        path = currentPath;
-        console.log(path);
-    }
-
-    $: getPath($page.url.pathname);
 
 </script>
 
@@ -27,22 +21,26 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<Avatar src="/public/images/profile-pic.jpg" width="w-10" rounded="rounded-full" class="mr-1" />
+				<Avatar src={ProfilePic} width="w-10" rounded="rounded-full" class="mr-1" />
 				<strong class="text-xl uppercase font-heading-token">Magnus A. Strømseng</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a href="/"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === path}>Home</button></a>
-				<a href="/about"><button type="button" class="btn variant-surface no-underline class:anchor={$page.url.pathname === path}">About</button></a>
-				<a href="/portfolio"><button type="button" class="btn variant-surface no-underline class:anchor={$page.url.pathname === path}">Portfolio</button></a>
-				<button type="button" class="btn variant-surface no-underline class:anchor={$page.url.pathname === path}">Contact Me</button>
-				<button type="button" class="btn variant-surface">
-					<span><i class="fa-brands fa-github fa-xl" /></span>
-					<span />
-				</button>
-				<button type="button" class="btn variant-surface">
-					<span><i class="fa-brands fa-linkedin fa-xl" /></span>
-					<span />
-				</button>
+				<a href="/"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/'}>Home</button></a>
+				<a href="/about"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/about'}>About</button></a>
+				<a href="/portfolio"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/portfolio'}>Portfolio</button></a>
+				<a href="/contact"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/contact'}>Contact Me</button></a>
+				<a href="https://github.com/Thrywyn">
+					<button type="button" class="btn variant-surface">
+						<span><i class="fa-brands fa-github fa-xl" /></span>
+						<span />
+					</button>
+				</a>
+				<a href="https://www.linkedin.com/in/magnus-alexander-str%C3%B8mseng-063112214/">
+					<button type="button" class="btn variant-surface">
+						<span><i class="fa-brands fa-linkedin fa-xl" /></span>
+						<span />
+					</button>
+				</a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
