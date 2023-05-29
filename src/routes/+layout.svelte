@@ -6,6 +6,19 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, AppBar, Avatar  } from '@skeletonlabs/skeleton';
+
+	//Grab URL
+	import { page } from '$app/stores';
+	
+	let path : string;
+
+    function getPath(currentPath : string) {
+        path = currentPath;
+        console.log(path);
+    }
+
+    $: getPath($page.url.pathname);
+
 </script>
 
 <!-- App Shell -->
@@ -18,10 +31,10 @@
 				<strong class="text-xl uppercase font-heading-token">Magnus A. Strømseng</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a href="/"><button type="button" class="btn variant-surface">Home</button></a>
-				<a href="/about"><button type="button" class="btn variant-surface">About</button></a>
-				<a href="/portfolio"><button type="button" class="btn variant-surface">Portfolio</button></a>
-				<button type="button" class="btn variant-surface">Contact Me</button>
+				<a href="/"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === path}>Home</button></a>
+				<a href="/about"><button type="button" class="btn variant-surface no-underline class:anchor={$page.url.pathname === path}">About</button></a>
+				<a href="/portfolio"><button type="button" class="btn variant-surface no-underline class:anchor={$page.url.pathname === path}">Portfolio</button></a>
+				<button type="button" class="btn variant-surface no-underline class:anchor={$page.url.pathname === path}">Contact Me</button>
 				<button type="button" class="btn variant-surface">
 					<span><i class="fa-brands fa-github fa-xl" /></span>
 					<span />
@@ -36,7 +49,9 @@
 	<!-- Page Route Content -->
 	<slot />
 	<svelte:fragment slot="pageFooter">
-		<AppBar>This website was built using <a class="anchor" href="https://svelte.dev">Svelte</a>, <a class="anchor" href="https://vitejs.dev">Vite</a>, <a class="anchor" href="https://www.skeleton.dev">Skeleton-UI</a>, <a class="anchor" href="https://fontawesome.com">Fontawesome</a></AppBar>
+		<AppBar gridColumns="grid-cols-1" slotDefault="place-self-center" class="w-full mt-10">
+			<div>This website was built using <a class="anchor" href="https://svelte.dev">Svelte</a>, <a class="anchor" href="https://vitejs.dev">Vite</a>, <a class="anchor" href="https://www.skeleton.dev">Skeleton-UI</a> and <a class="anchor" href="https://fontawesome.com">Fontawesome</a></div>
+		</AppBar>
 		</svelte:fragment>
 	<!-- (footer) -->
 </AppShell>
