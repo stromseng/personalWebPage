@@ -15,7 +15,7 @@
             <h1 class="h1 text-6xl sm:text-7xl">Magnus <br/> Alexander <br/> Strømseng</h1>
          </div>
          <p class="text-xl my-2 max-w-xs">I'm a Fullstack Developer and Computer Science Student from Norway.</p>
-         <button on:click={clickHandler} type="button" class="btn variant-filled-primary">Hire me</button>
+         <a href="mailto: magnus.stromseng+work@gmail.com"><button type="button" class="btn variant-filled-primary">Hire me</button></a>
     </div>
     
     <div class="w-full gap-2">
