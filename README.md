@@ -46,4 +46,4 @@ You can preview the production build with `npm run preview`.
 - [ ] Use cool font
 - [X] Add image of myself
 - [ ] Add cool self typing text
-
+- [ ] Add work History
