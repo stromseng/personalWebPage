@@ -10,7 +10,17 @@ export let description : string;
 export let picUrl : string | undefined = undefined;
 export let siteUrl : string | undefined = undefined;
 export let githubUrl : string | undefined = undefined;
+export let deployedUrl : string | undefined = undefined;
 export let footerText : string | undefined = "";
+
+if (siteUrl == undefined) {
+    if (deployedUrl != undefined) {
+        siteUrl = deployedUrl;
+    }
+    else if (githubUrl != undefined) {
+        siteUrl = githubUrl;
+    }
+    }
 
 
 </script>
