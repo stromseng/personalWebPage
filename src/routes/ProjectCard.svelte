@@ -7,32 +7,36 @@ const imagesLocation = '/images/';
 export let title : string;
 export let appStack : string;
 export let description : string;
-export let url : string | undefined | null;
-
-
+export let picUrl : string | undefined = undefined;
+export let siteUrl : string | undefined = undefined;
+export let githubUrl : string | undefined = undefined;
+export let footerText : string | undefined = "";
 
 
 </script>
 
-<a class="card card-hover overflow-hidden flex flex-col" href="/elements/cards">
-    <header>
-        <img src={imagesLocation + url} class="bg-black/50 w-full aspect-[21/9] object-cover object-left" alt="Post" />
-    </header>
-    <div class="p-4 grow">
-        <h3 class="h3" data-toc-ignore>{title}</h3>
-        <p class="text-xs font-thin mb-4">{appStack}</p>
-        <article>
-            <p>
-                {description}
-            </p>
-        </article>
-    </div>
+<div class="card card-hover overflow-hidden flex flex-col">
+    <a href={siteUrl} class="grow">
+        <header>
+            <img src={imagesLocation + picUrl} class="bg-black/50 w-full aspect-[21/9] object-cover object-left" alt="Post" />
+        </header>
+        <div class="p-4">
+            <h3 class="h3" data-toc-ignore>{title}</h3>
+            <p class="text-xs font-thin mb-4">{appStack}</p>
+            <article>
+                <p>
+                    {description}
+                </p>
+            </article>
+        </div>
+    </a>
     <hr class="opacity-50" />
     <footer class="p-4 flex justify-start items-center space-x-4">
-        <Avatar src="https://source.unsplash.com/YOErFW8AfkI/32x32" width="w-8" />
+        {#if githubUrl != undefined || githubUrl != null}
+        <a href={githubUrl}><i class="fa-brands fa-github fa-xl"></i></a>
+        {/if}
         <div class="flex-auto flex justify-between items-center">
-            <h6 class="font-bold">By Alex</h6>
-            <small>On {new Date().toLocaleDateString()}</small>
+            <h6 class="font-bold">{footerText}</h6>
         </div>
     </footer>
-</a>
+</div>
