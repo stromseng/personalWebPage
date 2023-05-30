@@ -21,8 +21,10 @@ export let footerText : string | undefined = "";
             <img src={imagesLocation + picUrl} class="bg-black/50 w-full aspect-[21/9] object-cover object-left" alt="Post" />
         </header>
         <div class="p-4">
-            <h3 class="h3" data-toc-ignore>{title}</h3>
-            <p class="text-xs font-thin mb-4">{appStack}</p>
+            <div class="mb-2">
+                <h3 class="h3" data-toc-ignore>{title}</h3>
+                <code class="code">{appStack}</code>
+            </div>
             <article>
                 <p>
                     {description}

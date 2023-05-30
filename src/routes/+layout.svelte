@@ -7,6 +7,11 @@
 	import '../app.postcss';
 	import { AppShell, AppBar, Avatar  } from '@skeletonlabs/skeleton';
 	import { AppRail, AppRailTile, AppRailAnchor } from '@skeletonlabs/skeleton';
+	//Highlight.js
+	import hljs from 'highlight.js'; 
+	import 'highlight.js/styles/github-dark.css';
+	import { storeHighlightJs } from '@skeletonlabs/skeleton';
+	storeHighlightJs.set(hljs);
 
 	let ProfilePic = "/images/profile-pic.jpg"
 
@@ -55,9 +60,9 @@
 			<svelte:fragment slot="lead"><i class="fa-solid fa-circle-user fa-lg"></i></svelte:fragment>
 			<span>About</span>
 		</AppRailAnchor>
-		<AppRailAnchor bind:group={currentTile} name="tile-4" value={3} href="/portfolio" on:click={drawerClose}>
+		<AppRailAnchor bind:group={currentTile} name="tile-4" value={3} href="/projects" on:click={drawerClose}>
 			<svelte:fragment slot="lead"><i class="fa-solid fa-folder fa-lg"></i></svelte:fragment>
-			<span>Portfolio</span>
+			<span>Projects</span>
 		</AppRailAnchor>
 		<AppRailAnchor bind:group={currentTile} name="tile-5" value={4} href="/contact" on:click={drawerClose}>
 			<svelte:fragment slot="lead"><i class="fa-solid fa-address-book fa-lg"></i></svelte:fragment>
@@ -89,7 +94,7 @@
 				<div class="hidden lg:block">
 					<a href="/"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/'}>Home</button></a>
 					<a href="/about"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/about'}>About</button></a>
-					<a href="/portfolio"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/portfolio'}>Portfolio</button></a>
+					<a href="/projects"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/projects'}>Projects</button></a>
 					<a href="/contact"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/contact'}>Contact Me</button></a>
 					<a href="https://github.com/Thrywyn">
 						<button type="button" class="btn variant-surface">

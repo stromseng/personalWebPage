@@ -1,5 +1,6 @@
 <script>
-    import ProjectCard from "./ProjectCard.svelte";
+    import ProjectCard from "$lib/components/ProjectCard.svelte";
+	import ProjectCardsGrid from "$lib/components/ProjectCardsGrid.svelte";
 
     function clickHandler() {
         console.log("Clicked");
@@ -24,10 +25,6 @@
     
     <div class="flex flex-col gap-2">
         <h3 class="h3">Projects</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4">
-                <ProjectCard title="Lendables" picUrl="lendables.png" githubUrl="https://github.com/Thrywyn/Lendables-pu-project"  appStack="React, Pocketbase, NextJS, NextUI, GitLab"  description="A full stack application developed using scrum and agile methods in a group. Allows users to lend out hobby tools and other hardware for limited time periods." />
-                <ProjectCard title="ZD Maps" picUrl="zd.png" githubUrl="https://github.com/zeldadungeon/maps" appStack="Leaflet, TypeScript, JS, HTML, GitHub" description="Open Source Project for mapping the game Zelda: Tears of the Kingdom. Contributed to both UI and functionality. "/>
-                <ProjectCard title="This Website" picUrl="selfPage.png" appStack="Svelte, Vite, SkeletonUI, Fontawesome" description="My personal website for showcasing my projects and other information about myself."/>
-            </div>
+            <ProjectCardsGrid> </ProjectCardsGrid>
     </div>
 </div>
