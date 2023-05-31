@@ -65,7 +65,7 @@
 			</div>
 		</div>
 		<h3>Libraries</h3>
-		<div class="logo-cloud grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
+		<div class="logo-cloud grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
 			<div class="logo-item">
 				<i class="fa-brands fa-react fa-2xl" style="color: #61dbfb" /><span>React</span>
 			</div>
@@ -102,7 +102,7 @@
 			</div>
 		</div>
 		<h3>Frameworks</h3>
-		<div class="logo-cloud grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
+		<div class="logo-cloud grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
 			<a class="logo-item"
 				><img
 					src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg"
@@ -112,7 +112,7 @@
 			>
 		</div>
 		<h3>Languages</h3>
-		<div class="logo-cloud grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
+		<div class="logo-cloud grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
 			<div class="logo-item">
 				<img
 					src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
@@ -134,7 +134,7 @@
 			</div>
 		</div>
 		<h3>Databases</h3>
-		<div class="logo-cloud grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
+		<div class="logo-cloud grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
 			<div class="logo-item">
 				<img src="https://pocketbase.io/images/logo.svg" alt="" class="w-8 h-8" /><span
 					>Pocketbase</span
@@ -144,7 +144,7 @@
 		</div>
 
 		<h3>Other</h3>
-		<div class="logo-cloud grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
+		<div class="logo-cloud grid-2 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
 			<div class="logo-item"><i class="fa-brands fa-github fa-2xl" /><span>Git</span></div>
 			<div class="logo-item">
 				<i class="fa-brands fa-npm fa-2xl" style="color: #cc3534;" /><span>npm</span>
@@ -175,7 +175,7 @@
 		</div>
 
 		<h3>Teamwork</h3>
-		<div class="logo-cloud grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
+		<div class="logo-cloud grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-0.5">
 			<div class="logo-item">
 				<img src="../logos/agile.png" alt="" class="w-8 h-8" /><span>Agile</span>
 			</div>
