@@ -73,9 +73,6 @@
 		<svelte:fragment slot="trail">
 			<AppRailAnchor href="/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl"></i></AppRailAnchor>
 			<AppRailAnchor href="/" target="_blank" title="GitHub"><i class="fa-brands fa-github fa-2xl"></i></AppRailAnchor>
-			<AppRailAnchor href="/" target="_blank" title="GitHub">
-				<i class="fa-solid fa-sun-bright fa-2xl"></i>
-			</AppRailAnchor>
 			
 		</svelte:fragment>
 	</AppRail>
@@ -113,7 +110,6 @@
 								<span />
 							</button>
 						</a>
-						<LightSwitch />
 				</div>
 				<!-- Hamburger Menu -->
 			<button on:click={drawerOpen} class="btn-icon btn-icon-sm lg:!hidden">
