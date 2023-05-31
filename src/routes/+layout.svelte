@@ -22,13 +22,15 @@
 	//Drawer
 	import { Drawer,  drawerStore } from '@skeletonlabs/skeleton';
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
+	import NavBar from '$lib/components/navbar/NavBar.svelte';
+	import NavBarItem from '$lib/components/navbar/NavBarItem.svelte';
 
 	// Drawer Handler
 	function drawerOpen(): void {
 		const s: DrawerSettings = { 
 			id: 'nav-drawer',
-		position: 'right',
-			width: 'w-auto',
+		position: 'top',
+			width: 'w-full',
 	};
 		drawerStore.open(s);		
 	}
@@ -46,40 +48,28 @@
 
 <Drawer>
 	{#if $drawerStore.id === 'nav-drawer'}
-	<AppRail>		
-		<AppRailAnchor bind:group={currentTile} name="tile-1" value={0} on:click={drawerClose} href="">
-			<svelte:fragment slot="lead">
-				<i class="fa-solid fa-bars text-xl" />
-			</svelte:fragment>
-		</AppRailAnchor>
-		<!-- --- -->
-		<AppRailAnchor bind:group={currentTile} name="tile-2" value={1} href="/" on:click={drawerClose}>
-			<svelte:fragment slot="lead"><i class="fa-solid fa-house fa-lg"></i></svelte:fragment>
-			<span>Home</span>
-		</AppRailAnchor>
-		<AppRailAnchor bind:group={currentTile} name="tile-3" value={2} href="/about" on:click={drawerClose}>
-			<svelte:fragment slot="lead"><i class="fa-solid fa-circle-user fa-lg"></i></svelte:fragment>
-			<span>About</span>
-		</AppRailAnchor>
-		<AppRailAnchor bind:group={currentTile} name="tile-4" value={3} href="/projects" on:click={drawerClose}>
-			<svelte:fragment slot="lead"><i class="fa-solid fa-folder fa-lg"></i></svelte:fragment>
-			<span>Projects</span>
-		</AppRailAnchor>
-		<AppRailAnchor bind:group={currentTile} name="tile-5" value={4} href="/contact" on:click={drawerClose}>
-			<svelte:fragment slot="lead"><i class="fa-solid fa-address-book fa-lg"></i></svelte:fragment>
-			<span>Contact Me</span>
-		</AppRailAnchor>
-		<!-- --- -->
-		<svelte:fragment slot="trail">
-			<AppRailAnchor href="/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl"></i></AppRailAnchor>
-			<AppRailAnchor href="/" target="_blank" title="GitHub"><i class="fa-brands fa-github fa-2xl"></i></AppRailAnchor>
-			
-		</svelte:fragment>
-	</AppRail>
-	{:else if $drawerStore.id === 'example-2'}
-		<!-- (show 'example-2' contents) -->
-	{:else}
-		<!-- (fallback contents) -->
+	<NavBar> 
+		<NavBarItem href="/">
+			<svelte:fragment slot="icon"><i class="fa-solid fa-house fa-xl"></i></svelte:fragment>
+			Home
+		</NavBarItem>
+		<NavBarItem href="/about">
+			<svelte:fragment slot="icon"><i class="fa-solid fa-circle-user fa-xl"></i></svelte:fragment>
+			About
+		</NavBarItem>
+		<NavBarItem href="/projects">
+			<svelte:fragment slot="icon"><i class="fa-solid fa-folder fa-xl"></i></svelte:fragment>
+			Projects
+		</NavBarItem>
+		<NavBarItem href="/contact">
+			<svelte:fragment slot="icon"><i class="fa-solid fa-phone fa-xl"></i></svelte:fragment>
+			Contact Me
+		</NavBarItem>
+		<NavBarItem href="https://github.com/Thrywyn">
+			<svelte:fragment slot="icon"><i class="fa-brands fa-github fa-xl"></i></svelte:fragment>
+			Github
+		</NavBarItem>
+	</NavBar>
 	{/if}
 </Drawer>
 
