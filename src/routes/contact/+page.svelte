@@ -11,7 +11,9 @@
 	<ul class="list">
 		<li>
 			<span><i class="fa-solid fa-envelope" /></span>
-			<span class="flex-auto">magnus@strømseng.no</span>
+			<a href="mailto: magnus@strømseng.no" class="anchor"
+				><span class="flex-auto">magnus@strømseng.no</span></a
+			>
 		</li>
 		<li>
 			<span><i class="fa-brands fa-linkedin" /></span>

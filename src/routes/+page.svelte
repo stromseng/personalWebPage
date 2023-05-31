@@ -22,7 +22,7 @@
                 <h1 class="h1 text-6xl sm:text-7xl">Magnus <br/> Alexander <br/> Strømseng</h1>
              </div>
              <p class="text-xl my-2 max-w-xs">I'm a Fullstack Developer and Informatics Student from Norway.</p>
-             <a href="mailto: magnus.stromseng+work@gmail.com"><button type="button" class="btn variant-filled-primary">Hire me</button></a>
+             <a href="mailto: magnus@strømseng.no"><button type="button" class="btn variant-filled-primary">Hire me</button></a>
         </div>
         <div class="w-[400px] invert justify-normal content-normal hidden lg:flex">
             <img src="/images/v6.svg" class=" hidden lg:block" alt="" srcset="">
