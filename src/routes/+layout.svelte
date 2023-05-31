@@ -69,6 +69,10 @@
 			<svelte:fragment slot="icon"><i class="fa-brands fa-github fa-xl"></i></svelte:fragment>
 			Github
 		</NavBarItem>
+		<NavBarItem href="https://www.linkedin.com/in/magnus-alexander-str%C3%B8mseng-063112214/">
+			<svelte:fragment slot="icon"><i class="fa-brands fa-linkedin fa-xl"></i></svelte:fragment>
+			LinkedIn
+		</NavBarItem>
 	</NavBar>
 	{/if}
 </Drawer>
