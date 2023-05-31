@@ -12,10 +12,10 @@
 	<div class="">
 		<Avatar src={ProfilePic} width="w-32" rounded="rounded-full" class="image-text-wrap" />
 		<p class="text-xl">
-			I'm a 21 year old Computer Science student from Oslo, Norway. I'm currently in my 3rd year of
-			my bachelor's degree at the Norwegian University of Technology and Science. I'm passionate
-			about technology and I love to learn new things. I'm also a big fan of open source software
-			and I try to contribute to open source projects whenever I can.
+			I'm a 21 year old Informatics student from Oslo, Norway. I'm currently in my 3rd year of my
+			bachelor's degree at the Norwegian University of Technology and Science. I'm passionate about
+			technology and I love to learn new things. I'm also a big fan of open source software and I
+			try to contribute to open source projects whenever I can.
 		</p>
 	</div>
 	<h2 class="h2">Education</h2>
