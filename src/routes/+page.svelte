@@ -4,32 +4,12 @@
 
     import { quintOut } from 'svelte/easing';
 	import { fade, draw, fly } from 'svelte/transition';
-	import { expand } from '$lib/custom-transitions.js';
-	import { inner, outer } from '$lib/shape.js';
 
     function clickHandler() {
         console.log("Clicked");
     }
 
    
-
-    //Timer SVG
-    let visible = true;
-	let timer = 3;
-    startTimer();
-
-  function startTimer() {
-    setInterval(() => {
-    if (timer > 0) 
-    {timer--;}
-  }, 1000);
-  }
-
-  $: if (timer == 0) {
-    if (visible) visible = false;
-    else visible = true;
-    timer = 3;;
-  }
 
 </script>
 
@@ -44,23 +24,8 @@
              <p class="text-xl my-2 max-w-xs">I'm a Fullstack Developer and Computer Science Student from Norway.</p>
              <a href="mailto: magnus.stromseng+work@gmail.com"><button type="button" class="btn variant-filled-primary">Hire me</button></a>
         </div>
-        <div class="w-[230px] ml-64 ">
-            {#if visible}
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 124">
-                <g out:fade="{{duration: 200}}" opacity=0.2>
-                    <path
-                        in:expand="{{duration: 400, delay: 1000, easing: quintOut}}"
-                        style="stroke: #ff3e00; fill: #ff3e00; stroke-width: 50;"
-                        d={outer}
-                    />
-                    <path
-                        in:draw="{{duration: 1000}}"
-                        style="stroke:#ff3e00; stroke-width: 1.5"
-                        d={inner}
-                    />
-                </g>
-            </svg>
-        {/if}
+        <div class="w-[400px] invert flex justify-normal content-normal">
+            <img src="static/images/v6.svg" alt="" srcset="">
         </div>
     </div>
     
