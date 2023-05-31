@@ -26,7 +26,7 @@
              <a href="mailto: magnus.stromseng+work@gmail.com"><button type="button" class="btn variant-filled-primary">Hire me</button></a>
         </div>
         <div class="w-[400px] invert flex justify-normal content-normal">
-            <img src="static/images/v6.svg" alt="" srcset="">
+            <img src="/images/v6.svg" alt="" srcset="">
         </div>
     </div>
     
