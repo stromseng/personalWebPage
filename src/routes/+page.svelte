@@ -25,9 +25,13 @@
              <p class="text-xl my-2 max-w-xs">I'm a Fullstack Developer and Computer Science Student from Norway.</p>
              <a href="mailto: magnus.stromseng+work@gmail.com"><button type="button" class="btn variant-filled-primary">Hire me</button></a>
         </div>
-        <div class="w-[400px] invert flex justify-normal content-normal">
-            <img src="/images/v6.svg" alt="" srcset="">
+        <div class="w-[400px] invert justify-normal content-normal hidden lg:flex">
+            <img src="/images/v6.svg" class=" hidden lg:block" alt="" srcset="">
         </div>
+    </div>
+
+    <div class="w-full invert justify-normal content-normal flex lg:hidden">
+        <img src="/images/v6.svg" class="" alt="" srcset="">
     </div>
     
     <div class="w-full gap-2">
