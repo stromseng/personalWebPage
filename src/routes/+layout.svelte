@@ -7,6 +7,7 @@
 	import '../app.postcss';
 	import { AppShell, AppBar, Avatar  } from '@skeletonlabs/skeleton';
 	import { AppRail, AppRailTile, AppRailAnchor } from '@skeletonlabs/skeleton';
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 	//Highlight.js
 	import hljs from 'highlight.js'; 
 	import 'highlight.js/styles/github-dark.css';
@@ -72,6 +73,10 @@
 		<svelte:fragment slot="trail">
 			<AppRailAnchor href="/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl"></i></AppRailAnchor>
 			<AppRailAnchor href="/" target="_blank" title="GitHub"><i class="fa-brands fa-github fa-2xl"></i></AppRailAnchor>
+			<AppRailAnchor href="/" target="_blank" title="GitHub">
+				<i class="fa-solid fa-sun-bright fa-2xl"></i>
+			</AppRailAnchor>
+			
 		</svelte:fragment>
 	</AppRail>
 	{:else if $drawerStore.id === 'example-2'}
@@ -91,23 +96,24 @@
 				<strong class="text-xl uppercase font-heading-token">Magnus A. Strømseng</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<div class="hidden lg:block">
-					<a href="/"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/'}>Home</button></a>
-					<a href="/about"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/about'}>About</button></a>
-					<a href="/projects"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/projects'}>Projects</button></a>
-					<a href="/contact"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/contact'}>Contact Me</button></a>
-					<a href="https://github.com/Thrywyn">
-						<button type="button" class="btn variant-surface">
-							<span><i class="fa-brands fa-github fa-xl" /></span>
-							<span />
-						</button>
-					</a>
-					<a href="https://www.linkedin.com/in/magnus-alexander-str%C3%B8mseng-063112214/">
-						<button type="button" class="btn variant-surface">
-							<span><i class="fa-brands fa-linkedin fa-xl" /></span>
-							<span />
-						</button>
-					</a>
+					<div class="hidden lg:flex flex-row items-center">
+						<a href="/"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/'}>Home</button></a>
+						<a href="/about"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/about'}>About</button></a>
+						<a href="/projects"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/projects'}>Projects</button></a>
+						<a href="/contact"><button type="button" class="btn variant-surface no-underline" class:anchor={$page.url.pathname === '/contact'}>Contact Me</button></a>
+						<a href="https://github.com/Thrywyn">
+							<button type="button" class="btn variant-surface">
+								<span><i class="fa-brands fa-github fa-xl" /></span>
+								<span />
+							</button>
+						</a>
+						<a href="https://www.linkedin.com/in/magnus-alexander-str%C3%B8mseng-063112214/">
+							<button type="button" class="btn variant-surface">
+								<span><i class="fa-brands fa-linkedin fa-xl" /></span>
+								<span />
+							</button>
+						</a>
+						<LightSwitch />
 				</div>
 				<!-- Hamburger Menu -->
 			<button on:click={drawerOpen} class="btn-icon btn-icon-sm lg:!hidden">
