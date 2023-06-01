@@ -49,3 +49,4 @@ You can preview the production build with `npm run preview`.
 - [X] Add image of myself
 - [ ] Add cool self typing text
 - [ ] Add work History
+- [ ] Add ability to have multiple images for projects.
