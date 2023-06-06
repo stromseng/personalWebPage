@@ -1,18 +1,22 @@
 <script lang="ts">
     export let title: string;
     export let appStack: string[];
+    export let githubUrl: string;
 </script>
 
 <div class="">
-    
-    <div class="mb-4">
+
         <h1 class="h1">{title}</h1>
-        <code class="code">Project</code>
-    </div>
-    {#each appStack as tech}
-    <ins class="ins sm:w-[50%]">
-        {tech}
-    </ins>
-    {/each}
+
+    <div class="mb-1"><code class="code">{appStack} </code> </div>
+    <a href={githubUrl}>
+        <div class="chip variant-filled-tertiary">
+            <span><i class="fa-brands fa-github fa-2xl"></i></span>
+            <span>GitHub</span>
+        </div>
+    </a>
+    
+
+
     
 </div>

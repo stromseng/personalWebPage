@@ -16,7 +16,6 @@
 
 <BodyDiv>
     <ProjectHeader {...project}></ProjectHeader>
-    <a href={project.githubUrl}><i class="fa-brands fa-github fa-2xl"></i></a>
     <h2 class="h2">About</h2>
     <p class="text-xl">Lendables is a web app for lending and borrowing items. It's built with NextJS and NextUI. The backend is built with Pocketbase.</p>
     <img src={project.imageUrl} class="bg-black/50 w-max" alt="Post" />

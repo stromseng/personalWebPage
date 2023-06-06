@@ -20,7 +20,7 @@
 	</div>
 	<h2 class="h2">Education</h2>
 	<Timeline order="vertical">
-		<TimelineItem title="Norwegian Institute of Technology and Science" date="2020-2023">
+		<TimelineItem title="Norwegian Institute of Technology and Science" date="2021-2024">
 			<svelte:fragment slot="icon">
 				<span
 					class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900"
