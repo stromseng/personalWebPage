@@ -1,21 +1,5 @@
 Hosted on https://magnus.stromseng.net
 
-# create-svelte
-
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
@@ -37,9 +21,6 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-
 ### TODO LIST
 
 - [X] Add Created with Svelte, skeletonui, fontawesome, etc to bottom of page
@@ -47,6 +28,6 @@ You can preview the production build with `npm run preview`.
 - [X] Add project examples
 - [X] Use cool font
 - [X] Add image of myself
-- [ ] Add cool self typing text
-- [ ] Add work History
-- [ ] Add ability to have multiple images for projects.
+- [X] Add cool self typing text
+- [X] Add work History
+- [X] Add ability to have multiple images for projects.
