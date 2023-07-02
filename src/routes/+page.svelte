@@ -1,14 +1,6 @@
 <script lang="ts">
-	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import ProjectCardsGrid from '$lib/components/ProjectCardsGrid.svelte';
 	import SelfTypingCode from '$lib/components/SelfTypingCode.svelte';
-
-	import { quintOut } from 'svelte/easing';
-	import { fade, draw, fly } from 'svelte/transition';
-
-	function clickHandler() {
-		console.log('Clicked');
-	}
 </script>
 
 <div class="px-5 sm:px-20 md:px-40 xl:px-76 2xl:px-96 flex flex-col gap-10">
