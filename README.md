@@ -26,8 +26,7 @@ You can preview the production build with `npm run preview`.
 - [X] Add Created with Svelte, skeletonui, fontawesome, etc to bottom of page
 - [X] Add github/social media links
 - [X] Add project examples
-- [X] Use cool font
 - [X] Add image of myself
-- [X] Add cool self typing text
 - [X] Add work History
 - [X] Add ability to have multiple images for projects.
+- [ ] Update Project system to use a CMS.
