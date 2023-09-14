@@ -15,14 +15,22 @@ const config = {
 			// these options are set automatically — see below
 			pages: 'build',
 			assets: 'build',
-			fallback: undefined,
+			fallback: 'index.html', // may differ from host to host
 			precompress: false,
 			strict: true
 		}),
 		prerender: {
 			// use relative URLs similar to an anchor tag <a href="/test/1"></a>
 			// do not include group layout folders in the path such as /(group)/test/1
-			entries: ['/projects/lendables', '/projects/zdmap', '/projects/mywebsite', '*']
+			entries: [
+				'/projects/lendables',
+				'/projects/zdmap',
+				'/projects/mywebsite',
+				'/projects/heatmap',
+				'/projects/aStar',
+				'/projects/airsoftScraper',
+				'*'
+			]
 		}
 	}
 };

@@ -1,4 +1,4 @@
-export const projectTemplate = {
+export const projectTemplate : Project = {
 	title: '',
 	internalName: '',
 	desciptionShort: '',

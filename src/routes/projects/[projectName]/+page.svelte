@@ -15,8 +15,8 @@
 	export let data: import('./$types').PageData;
 
 	//Dynamic Import Project
-	const modules = import.meta.glob('../../../lib/projects/*.js');
-	let Project: { title: string; appStack: string; githubUrl: string } | null | undefined = null;
+	const modules = import.meta.glob('../../../lib/projects/*.ts');
+	let Project: Project;
 
 	for (const path in modules) {
 		modules[path]().then((mod) => {
@@ -37,6 +37,7 @@
 	{#if Project != null}
 		<ProjectHeader {...Project} />
 		<h2 class="h2">About</h2>
+		<p class="text-xl">{Project.desciptionShort}</p>
 		<p class="text-xl">{Project.description}</p>
 		<div class="max-w-4xl">
 			<Carousel

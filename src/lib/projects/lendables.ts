@@ -1,4 +1,4 @@
-export const lendables = {
+export const lendables : Project = {
 	title: 'Lendables',
 	internalName: 'lendables',
 	desciptionShort:
@@ -8,6 +8,7 @@ export const lendables = {
 	appStack: 'React, NextJS, NextUI, Pocketbase, GitLab',
 	githubUrl: 'https://github.com/Thrywyn/Lendables-pu-project',
 	siteUrl: '/projects/lendables',
+	deployedUrl: '',
 	imageShowCaseUrl: '/images/projects/lendables/lendables.png',
 	images: [
 		{
