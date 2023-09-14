@@ -1,6 +1,4 @@
 <script lang="ts">
-	import WantToLearn from './WantToLearn.svelte';
-
 	import Skills from './Skills.svelte';
 
 	import Education from './Education.svelte';

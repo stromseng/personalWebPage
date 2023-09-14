@@ -1,8 +1,6 @@
 <script lang="ts">
 	import Jobs from './Jobs.svelte';
 
-	import WantToLearn from './WantToLearn.svelte';
-
 	import Skills from './Skills.svelte';
 
 	import Education from './Education.svelte';
@@ -29,6 +27,4 @@
 	<Education />
 	<Jobs />
 	<Skills />
-
-	<WantToLearn />
 </BodyDiv>
