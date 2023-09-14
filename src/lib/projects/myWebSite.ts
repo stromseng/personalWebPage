@@ -1,4 +1,4 @@
-export const myWebSite = {
+export const myWebSite : Project = {
 	title: 'This Website',
 	internalName: 'mywebsite',
 	desciptionShort:

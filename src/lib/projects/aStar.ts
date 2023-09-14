@@ -1,4 +1,4 @@
-export const aStar = {
+export const aStar : Project = {
 	title: 'An A* Pathfinding Visualizer',
 	internalName: 'aStar',
 	desciptionShort: 'A maze generator and A* pathfinding visualizer.',

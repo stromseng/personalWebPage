@@ -1,4 +1,4 @@
-export const zdMap = {
+export const zdMap : Project = {
 	title: 'ZD Map',
 	internalName: 'zdmap',
 	desciptionShort:

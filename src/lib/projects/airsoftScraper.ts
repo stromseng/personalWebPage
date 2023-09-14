@@ -1,4 +1,4 @@
-export const airsoftScraper = {
+export const airsoftScraper : Project = {
 	title: 'Airsoft BB Price Scraper',
 	internalName: 'airsoftScraper',
 	desciptionShort: 'A web scraper for finding the cheapest airsoft BBs.',
