@@ -34,7 +34,7 @@
 		<div class="p-4">
 			<div class="mb-2">
 				<h3 class="h3" data-toc-ignore>{title}</h3>
-				<code class="code">{appStack}</code>
+				<code class="code whitespace-normal">{appStack}</code>
 			</div>
 			<article>
 				<p>
