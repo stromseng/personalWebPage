@@ -91,25 +91,25 @@
 							class:anchor={$page.url.pathname === '/'}>Home</button
 						></a
 					>
-					<a href="/about"
+					<a href="/about/"
 						><button
 							type="button"
 							class="btn variant-surface no-underline"
-							class:anchor={$page.url.pathname === '/about'}>About</button
+							class:anchor={$page.url.pathname === '/about/'}>About</button
 						></a
 					>
-					<a href="/projects"
+					<a href="/projects/"
 						><button
 							type="button"
 							class="btn variant-surface no-underline"
-							class:anchor={$page.url.pathname === '/projects'}>Projects</button
+							class:anchor={$page.url.pathname === '/projects/'}>Projects</button
 						></a
 					>
-					<a href="/contact"
+					<a href="/contact/"
 						><button
 							type="button"
 							class="btn variant-surface no-underline"
-							class:anchor={$page.url.pathname === '/contact'}>Contact Me</button
+							class:anchor={$page.url.pathname === '/contact/'}>Contact Me</button
 						></a
 					>
 					<a href="https://github.com/Thrywyn" target="_blank">
