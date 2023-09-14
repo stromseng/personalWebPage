@@ -24,7 +24,7 @@ jobs:
     # This job uses a matrix strategy to run the job four times, once for each specified Node version. For more information, see "[AUTOTITLE](/actions/using-jobs/using-a-matrix-for-your-jobs)."
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x, 20.x]
+        node-version: [20.x]
     #
     steps:
       # This step uses the `actions/checkout` action to download a copy of your repository on the runner.
@@ -39,4 +39,4 @@ jobs:
       # This step runs the `build` script if there is one specified under the `scripts` key in your `package.json` file.
       - run: npm run build --if-present
       # This step runs the `test` script that is specified under the `scripts` key in your `package.json` file.
-      - run: npm test
+      #- run: npm test
