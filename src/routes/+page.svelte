@@ -16,7 +16,7 @@
 			<p class="text-xl my-2 max-w-xs">
 				I'm a Fullstack Developer and Informatics Student from Norway.
 			</p>
-			<a href="mailto: magnus@strømseng.no"
+			<a href="mailto: magnus.stromseng+work@gmail.com"
 				><button type="button" class="btn variant-filled-primary">Hire me</button></a
 			>
 		</div>
