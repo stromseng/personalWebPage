@@ -1,4 +1,5 @@
 <script lang="ts">
+
 	// The ordering of these imports is critical to your app working properly
 	import '@skeletonlabs/skeleton/themes/theme-rocket.css';
 	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
@@ -24,6 +25,8 @@
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import NavBar from '$lib/components/navbar/NavBar.svelte';
 	import NavBarItem from '$lib/components/navbar/NavBarItem.svelte';
+
+
 
 	// Drawer Handler
 	function drawerOpen(): void {
@@ -137,6 +140,7 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
+
 	<svelte:fragment slot="pageFooter">
 		<AppBar gridColumns="grid-cols-1" slotDefault="place-self-center" class="w-full mt-10">
 			<div>

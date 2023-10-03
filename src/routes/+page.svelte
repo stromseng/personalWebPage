@@ -1,6 +1,19 @@
 <script lang="ts">
 	import ProjectCardsGrid from '$lib/components/ProjectCardsGrid.svelte';
 	import SelfTypingCode from '$lib/components/SelfTypingCode.svelte';
+	import type { Project } from '$lib/types/sanity';
+
+	/** @type {import('./$types').PageData} */
+	// src/routes/+page.js
+	//Import Sanity CMS data
+
+	interface sanityData {
+		projects: Project[];
+	}
+
+	export let data: sanityData;
+
+	$: console.log('sanity data', data);
 </script>
 
 <div class="px-5 sm:px-20 md:px-40 xl:px-76 2xl:px-96 flex flex-col gap-10">
@@ -41,6 +54,10 @@
 
 	<div class="flex flex-col gap-2">
 		<h3 class="h3">Projects</h3>
-		<ProjectCardsGrid />
+		{#if data.projects && data.projects.length}
+			<ProjectCardsGrid projects={data.projects} />
+		{:else}
+			<p>Error: No projects found...</p>
+		{/if}
 	</div>
 </div>

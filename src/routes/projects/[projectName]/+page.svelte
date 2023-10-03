@@ -5,43 +5,55 @@
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import { onMount } from 'svelte';
 
+	import imageUrlBuilder from '@sanity/image-url';
+	import client from '$lib/sanityClient';
+
 	//Carousel
 	import { Carousel } from 'flowbite-svelte';
-	let Images: any;
+	import type { Project } from '$lib/types/sanity';
+
 	let showThumbs = false;
 	let showCaptions = false;
 
-	//Slugs
-	export let data: import('./$types').PageData;
+	export let data;
 
-	//Dynamic Import Project
-	const modules = import.meta.glob('../../../lib/projects/*.ts');
-	let Project: Project;
+	console.log('data', data);
 
-	for (const path in modules) {
-		modules[path]().then((mod) => {
-			console.log(mod);
-			for (const key in mod as any) {
-				console.log(mod[key]);
+	let project: Project = data.project[0];
 
-				if (mod[key].internalName === data.projectName) {
-					Project = mod[key];
-					Images = Project.images;
-				}
-			}
+	// Get a pre-configured url-builder from your sanity client
+	const builder = imageUrlBuilder(client);
+
+	// Then we like to make a simple function like this that gives the
+	// builder an image and returns the builder for you to specify additional
+	// parameters:
+	function urlFor(source: any) {
+		return builder.image(source);
+	}
+
+	//Create Images array
+	let images: Array<{}> = [];
+
+	for (let i = 0; i < project.images.length; i++) {
+		images.push({
+			imgurl: urlFor(project.images[i]).url(),
+			name: 'Image ' + i,
+			attribution: 'Image ' + i
 		});
 	}
+
+	console.log('Images', images);
 </script>
 
 <BodyDiv>
-	{#if Project != null}
-		<ProjectHeader {...Project} />
+	{#if project != null}
+		<ProjectHeader {project} />
 		<h2 class="h2">About</h2>
-		<p class="text-xl">{Project.desciptionShort}</p>
-		<p class="text-xl">{Project.description}</p>
+		<p class="text-xl">{project.shortDescription}</p>
+		<p class="text-xl">{project.longDescription}</p>
 		<div class="max-w-4xl">
 			<Carousel
-				images={Images}
+				{images}
 				{showThumbs}
 				{showCaptions}
 				divClass="overflow-hidden relative rounded-lg"

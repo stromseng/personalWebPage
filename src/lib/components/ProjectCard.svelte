@@ -2,54 +2,55 @@
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import { stringify } from 'postcss';
 
-	const imagesLocation = '/images/';
+	import client from '$lib/sanityClient';
 
-	export let title: string;
-	export let appStack: string;
-	export let desciptionShort: string;
-	export let imageShowCaseUrl: string | undefined = undefined;
-	export let siteUrl: string | undefined = undefined;
-	export let githubUrl: string | undefined = undefined;
-	export let deployedUrl: string | undefined = undefined;
-	export let footerText: string | undefined = '';
+	import imageUrlBuilder from '@sanity/image-url';
 
-	if (siteUrl == undefined) {
-		if (deployedUrl != undefined) {
-			siteUrl = deployedUrl;
-		} else if (githubUrl != undefined) {
-			siteUrl = githubUrl;
-		}
+	import type { Image, Project } from '$lib/types/sanity';
+
+	// Get a pre-configured url-builder from your sanity client
+	const builder = imageUrlBuilder(client);
+
+	// Then we like to make a simple function like this that gives the
+	// builder an image and returns the builder for you to specify additional
+	// parameters:
+	function urlFor(source: any) {
+		return builder.image(source);
 	}
+
+	export let project: Project;
+
+	let siteUrl = '/projects/' + project.slug.current;
 </script>
 
 <div class="card card-hover overflow-hidden flex flex-col">
 	<a href={siteUrl} class="grow">
 		<header>
 			<img
-				src={imageShowCaseUrl}
+				src={urlFor(project.mainImage).url()}
 				class="bg-black/50 w-full aspect-[21/9] object-cover object-left"
 				alt="Post"
 			/>
 		</header>
 		<div class="p-4">
 			<div class="mb-2">
-				<h3 class="h3" data-toc-ignore>{title}</h3>
-				<code class="code whitespace-normal">{appStack}</code>
+				<h3 class="h3" data-toc-ignore>{project.title}</h3>
+				<code class="code whitespace-normal">{project.tags}</code>
 			</div>
 			<article>
 				<p>
-					{desciptionShort}
+					{project.shortDescription}
 				</p>
 			</article>
 		</div>
 	</a>
 	<hr class="opacity-50" />
 	<footer class="p-4 flex justify-start items-center space-x-4">
-		{#if githubUrl != undefined || githubUrl != null}
-			<a href={githubUrl}><i class="fa-brands fa-github fa-xl" /></a>
+		{#if project.githubLink != undefined || project.githubLink != null}
+			<a href={project.githubLink}><i class="fa-brands fa-github fa-xl" /></a>
 		{/if}
 		<div class="flex-auto flex justify-between items-center">
-			<h6 class="font-bold">{footerText}</h6>
+			<h6 class="font-bold">{''}</h6>
 		</div>
 	</footer>
 </div>
