@@ -49,15 +49,15 @@
 				<svelte:fragment slot="icon"><i class="fa-solid fa-house fa-xl" /></svelte:fragment>
 				Home
 			</NavBarItem>
-			<NavBarItem href="/about">
+			<NavBarItem href="/about/">
 				<svelte:fragment slot="icon"><i class="fa-solid fa-circle-user fa-xl" /></svelte:fragment>
 				About
 			</NavBarItem>
-			<NavBarItem href="/projects">
+			<NavBarItem href="/projects/">
 				<svelte:fragment slot="icon"><i class="fa-solid fa-folder fa-xl" /></svelte:fragment>
 				Projects
 			</NavBarItem>
-			<NavBarItem href="/contact">
+			<NavBarItem href="/contact/">
 				<svelte:fragment slot="icon"><i class="fa-solid fa-phone fa-xl" /></svelte:fragment>
 				Contact Me
 			</NavBarItem>
