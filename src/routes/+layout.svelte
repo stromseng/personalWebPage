@@ -147,8 +147,8 @@
 	<svelte:fragment slot="pageFooter">
 		<AppBar gridColumns="grid-cols-1" slotDefault="place-self-center" class="w-full mt-10">
 			<div>
-				This website was built using <a class="anchor" href="https://www.sanity.io/">Svelte</a>,
-				<a class="anchor" href="https://svelte.dev">Sanity</a>,
+				This website was built using <a class="anchor" href="https://svelte.dev">Svelte</a>,
+				<a class="anchor" href="https://www.sanity.io/">Sanity</a>,
 				<a class="anchor" href="https://vitejs.dev">Vite</a>,
 				<a class="anchor" href="https://www.skeleton.dev">Skeleton-UI</a>
 				and <a class="anchor" href="https://fontawesome.com">Fontawesome</a>
