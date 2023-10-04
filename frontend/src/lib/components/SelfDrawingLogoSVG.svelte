@@ -6,7 +6,7 @@
 	let fillOpacity = 0;
 	let transition = 'fill-opacity 3s ease-in-out ';
 	let visible = false;
-	let mountDelay = 1000;
+	let mountDelay = 750;
 	let fillDelay = 1750;
 
 	onMount(() => {
@@ -44,7 +44,6 @@
 			<g id="layer2" transform="translate(0.19142617,-0.00313977)">
 				<path
 					in:draw={{ duration: 5000, delay: 250, easing: quintOut }}
-					out:draw={{ duration: 5000, delay: 250, easing: quintOut }}
 					style="fill-opacity: {fillOpacity}; transition: {transition};"
 					fill="white"
 					stroke="#ffffff"
@@ -55,7 +54,6 @@
 				/>
 				<path
 					in:draw={{ duration: 5000, delay: 250, easing: quintOut }}
-					out:draw={{ duration: 5000, delay: 250, easing: quintOut }}
 					style="fill-opacity: {fillOpacity}; transition: {transition};"
 					fill="white"
 					stroke="#ffffff"
@@ -66,7 +64,6 @@
 				/>
 				<path
 					in:draw={{ duration: 5000, delay: 250, easing: quintOut }}
-					out:draw={{ duration: 5000, delay: 250, easing: quintOut }}
 					style="fill-opacity: {fillOpacity}; transition: {transition};"
 					fill="white"
 					stroke="#ffffff"
@@ -77,7 +74,6 @@
 				/>
 				<path
 					in:draw={{ duration: 5000, delay: 250, easing: quintOut }}
-					out:draw={{ duration: 5000, delay: 250, easing: quintOut }}
 					style="fill-opacity: {fillOpacity}; transition: {transition};"
 					fill="white"
 					stroke="#ffffff"
