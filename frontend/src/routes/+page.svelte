@@ -1,7 +1,10 @@
 <script lang="ts">
+	import LogoSvg from '$lib/components/SelfDrawingLogoSVG.svelte';
 	import ProjectCardsGrid from '$lib/components/ProjectCardsGrid.svelte';
 	import SelfTypingCode from '$lib/components/SelfTypingCode.svelte';
 	import type { Project } from '$lib/types/sanity';
+	import HoverDrawSVG from 'svelte-hover-draw-svg';
+	import { draw, fade } from 'svelte/transition';
 
 	/** @type {import('./$types').PageData} */
 	// src/routes/+page.js
@@ -33,14 +36,15 @@
 				><button type="button" class="btn variant-filled-primary">Hire me</button></a
 			>
 		</div>
-		<div class="w-[400px] invert justify-normal content-normal hidden lg:flex">
-			<img src="/images/v6.svg" class=" hidden lg:block" alt="" srcset="" />
+
+		<div class="w-[400px] justify-normal content-normal hidden lg:flex">
+			<LogoSvg />
 		</div>
 	</div>
 
 	<!-- SVG Logo -->
-	<div class="w-full invert justify-normal content-normal flex lg:hidden">
-		<img src="/images/v6.svg" class="" alt="" srcset="" />
+	<div class="w-full justify-normal content-normal flex lg:hidden">
+		<LogoSvg />
 	</div>
 
 	<!-- About Me -->
