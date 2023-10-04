@@ -5,6 +5,7 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import ProjectCardsGrid from '$lib/components/ProjectCardsGrid.svelte';
 	import type { Project } from '$lib/types/sanity';
+
 	let ProfilePic = '/images/profile-pic.jpg';
 
 	interface sanityData {

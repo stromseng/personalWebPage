@@ -5,12 +5,15 @@
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import { onMount } from 'svelte';
 
+	import { PortableText } from '@portabletext/svelte';
 	import imageUrlBuilder from '@sanity/image-url';
 	import client from '$lib/sanityClient';
 
 	//Carousel
 	import { Carousel } from 'flowbite-svelte';
 	import type { Project } from '$lib/types/sanity';
+
+	import CustomParagraph from '$lib/components/CustomParagraph.svelte';
 
 	let showThumbs = false;
 	let showCaptions = false;
@@ -50,7 +53,14 @@
 		<ProjectHeader {project} />
 		<h2 class="h2">About</h2>
 		<p class="text-xl">{project.shortDescription}</p>
-		<p class="text-xl">{project.longDescription}</p>
+		<PortableText
+			value={project.body}
+			components={{
+				block: {
+					normal: CustomParagraph
+				}
+			}}
+		/>
 		<div class="max-w-4xl">
 			<Carousel
 				{images}

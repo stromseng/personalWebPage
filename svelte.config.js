@@ -23,6 +23,7 @@ const config = {
 			// use relative URLs similar to an anchor tag <a href="/test/1"></a>
 			// do not include group layout folders in the path such as /(group)/test/1
 			entries: [
+				'/',
 				'/projects/lendables/',
 				'/projects/zd-map/',
 				'/projects/my-personal-website/',
