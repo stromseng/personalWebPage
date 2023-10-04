@@ -24,11 +24,11 @@ const config = {
 			// do not include group layout folders in the path such as /(group)/test/1
 			entries: [
 				'/projects/lendables/',
-				'/projects/zdmap/',
-				'/projects/mywebsite/',
-				'/projects/heatmap/',
-				'/projects/aStar/',
-				'/projects/airsoftScraper/',
+				'/projects/zd-map/',
+				'/projects/my-personal-website/',
+				'/projects/onward-heatmap/',
+				'/projects/an-a-pathfinding-visualizer/',
+				'/projects/airsoft-bb-price-scraper/',
 				'*'
 			]
 		}
