@@ -39,7 +39,11 @@
 		drawerStore.close();
 	}
 
-	let currentTile: number = 0;
+	import { afterNavigate } from '$app/navigation';
+
+	afterNavigate(() => {
+		document.getElementById('page')?.scrollTo(0, 0);
+	});
 </script>
 
 <Drawer>
@@ -136,7 +140,9 @@
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->
-	<slot />
+	<div id="page">
+		<slot />
+	</div>
 	<!-- (footer) -->
 	<svelte:fragment slot="pageFooter">
 		<AppBar gridColumns="grid-cols-1" slotDefault="place-self-center" class="w-full mt-10">
