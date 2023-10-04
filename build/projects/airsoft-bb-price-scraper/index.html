@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<title>Magnus A. Strømseng</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/images/v6.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<!-- Font awesome -->
+		<script src="https://kit.fontawesome.com/a4e11d8848.js" crossorigin="anonymous"></script>
+		<!-- Font Inter -->
+		
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.a5b6275b.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index.51b48ffe.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/singletons.e032e134.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index.dc1c1c30.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.7ac84049.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/preload-helper.a4192956.js">
+	</head>
+	<body data-sveltekit-preload-data="hover" data-theme="rocket">
+		<div style="display: contents" class="h-full overflow-hidden">
+			<script>
+				{
+					__sveltekit_bjgsjc = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.a5b6275b.js"),
+						import("../../_app/immutable/entry/app.7ac84049.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
