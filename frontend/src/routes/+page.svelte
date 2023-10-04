@@ -3,7 +3,6 @@
 	import ProjectCardsGrid from '$lib/components/ProjectCardsGrid.svelte';
 	import SelfTypingCode from '$lib/components/SelfTypingCode.svelte';
 	import type { Project } from '$lib/types/sanity';
-	import HoverDrawSVG from 'svelte-hover-draw-svg';
 	import { draw, fade } from 'svelte/transition';
 
 	/** @type {import('./$types').PageData} */
