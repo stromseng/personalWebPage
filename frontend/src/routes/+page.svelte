@@ -38,10 +38,12 @@
 		</div>
 	</div>
 
+	<!-- SVG Logo -->
 	<div class="w-full invert justify-normal content-normal flex lg:hidden">
 		<img src="/images/v6.svg" class="" alt="" srcset="" />
 	</div>
 
+	<!-- About Me -->
 	<div class="w-full gap-2">
 		<h3 class="h3">About Me</h3>
 		<p class="text-l">
@@ -52,6 +54,7 @@
 		</p>
 	</div>
 
+	<!-- Projects -->
 	<div class="flex flex-col gap-2">
 		<h3 class="h3">Projects</h3>
 		{#if data.projects && data.projects.length}
