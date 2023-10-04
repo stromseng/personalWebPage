@@ -2,8 +2,10 @@
 
 import client from '$lib/sanityClient';
 
+import groq from 'groq';
+
 export async function load({ params }) {
-	const data = await client.fetch(`*[_type == "project"]`);
+	const data = await client.fetch(groq`*[_type == "project"] | order(sortOrder asc)`);
 	if (data) {
 		console.log('Projects found');
 		console.log(data);
