@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Project } from '$lib/types/sanity';
+	import CodeTags from './CodeTags.svelte';
 
 	export let project: Project;
 </script>
@@ -7,7 +8,7 @@
 <div class="">
 	<h1 class="h1">{project.title}</h1>
 
-	<div class="mb-1"><code class="code">{project.tags} </code></div>
+	<div class="mb-1"><CodeTags tags={project.tags} /></div>
 	{#if project.githubLink}
 		<a href={project.githubLink}>
 			<div class="chip variant-soft-primary p-1">

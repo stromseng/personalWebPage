@@ -7,6 +7,7 @@
 	import imageUrlBuilder from '@sanity/image-url';
 
 	import type { Image, Project } from '$lib/types/sanity';
+	import CodeTags from './CodeTags.svelte';
 
 	// Get a pre-configured url-builder from your sanity client
 	const builder = imageUrlBuilder(client);
@@ -35,7 +36,7 @@
 		<div class="p-4">
 			<div class="mb-2">
 				<h3 class="h3" data-toc-ignore>{project.title}</h3>
-				<code class="code whitespace-normal">{project.tags}</code>
+				<CodeTags tags={project.tags} />
 			</div>
 			<article>
 				<p>
