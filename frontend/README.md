@@ -29,4 +29,6 @@ You can preview the production build with `npm run preview`.
 - [X] Add image of myself
 - [X] Add work History
 - [X] Add ability to have multiple images for projects.
-- [ ] Update Project system to use a CMS.
+- [x] Update Project system to use a CMS.
+- [ ] Add handling for sanity's text links
+- [ ] Fix hosting providers handling of subpages, refresh not working.
