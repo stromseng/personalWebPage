@@ -20,16 +20,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-### TODO LIST
-
-- [X] Add Created with Svelte, skeletonui, fontawesome, etc to bottom of page
-- [X] Add github/social media links
-- [X] Add project examples
-- [X] Add image of myself
-- [X] Add work History
-- [X] Add ability to have multiple images for projects.
-- [x] Update Project system to use a CMS.
-- [ ] Add handling for sanity's text links
-- [ ] Fix hosting providers handling of subpages, refresh not working.
-- [ ] Add a hosted website link to the bottom of the cards if defined
