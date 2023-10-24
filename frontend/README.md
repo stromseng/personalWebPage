@@ -32,3 +32,4 @@ You can preview the production build with `npm run preview`.
 - [x] Update Project system to use a CMS.
 - [ ] Add handling for sanity's text links
 - [ ] Fix hosting providers handling of subpages, refresh not working.
+- [ ] Add a hosted website link to the bottom of the cards if defined
