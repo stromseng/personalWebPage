@@ -33,6 +33,8 @@
   },
   "type": "module",
   "dependencies": {
-    "@sanity/client": "^6.8.6"
+    "@sanity/client": "^6.8.6",
+    "groq": "^3.20.1",
+    "theme-change": "^2.5.0"
   }
 }
