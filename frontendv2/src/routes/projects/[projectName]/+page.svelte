@@ -1,5 +1,5 @@
 <script lang="ts">
-    import BodyDiv from "$lib/components/BodyDiv.svelte";
+    import BodyDiv from "$lib/components/ContentBody.svelte";
     import ProjectHeader from "$lib/components/ProjectHeader.svelte";
     import { onMount } from "svelte";
     import Carousel from "$lib/components/Carousel.svelte";
@@ -34,7 +34,7 @@
     //Create Images array
     let images = [] as { src: string; alt: string }[];
 
-    for (let i = 0; i < project.images.length; i++) {
+    for (let i = 0; i < project?.images.length; i++) {
         images.push({
             src: urlFor(project.images[i]).url(),
             alt: "Image " + i,
@@ -45,22 +45,22 @@
 </script>
 
 <BodyDiv>
-    {#if project != null}
+    {#if project != null && project != undefined}
         <ProjectHeader {project} />
-        <h2 class="h2">About</h2>
-        <p class="text-xl">{project.shortDescription}</p>
-        <PortableText
-            value={project.body}
-            components={{
-                block: {
-                    normal: CustomParagraph,
-                },
-            }}
-        />
         <div class="max-w-4xl">
             <Carousel {images}></Carousel>
         </div>
+        <div class="prose">
+            <PortableText
+                value={project.body}
+                components={{
+                    block: {
+                        normal: CustomParagraph,
+                    },
+                }}
+            />
+        </div>
     {:else}
-        <p>Project not found</p>
+        <p>Error: Project not found</p>
     {/if}
 </BodyDiv>

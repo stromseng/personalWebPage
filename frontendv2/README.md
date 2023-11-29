@@ -1,3 +1,12 @@
+# TODO
+- [ ] Add footer back
+- [ ] Fix About page Timeline
+- [ ] Fix About page Skills
+- [x] Fix Projects prose typography
+- [ ] Update this Readme
+- [ ] Make sure Sanity setup is good. Maybe use https://www.sanity.io/plugins/sanity-codegen ?
+- [ ] Fix project web link in card grid
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
