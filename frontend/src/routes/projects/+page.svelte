@@ -1,21 +1,16 @@
 <script lang="ts">
-	import BodyDiv from '$lib/components/BodyDiv.svelte';
-	import { CodeBlock } from '@skeletonlabs/skeleton';
-	import { Avatar } from '@skeletonlabs/skeleton';
-	import ProjectCard from '$lib/components/ProjectCard.svelte';
-	import ProjectCardsGrid from '$lib/components/ProjectCardsGrid.svelte';
-	import type { Project } from '$lib/types/sanity';
+    import BodyDiv from "$lib/components/Styling/ContentBody.svelte";
+    import ProjectCardsGrid from "$lib/components/Projects/ProjectCardsGrid.svelte";
+    import type { Project } from "$lib/types/sanity";
 
-	let ProfilePic = '/images/profile-pic.jpg';
+    interface sanityData {
+        projects: Project[];
+    }
 
-	interface sanityData {
-		projects: Project[];
-	}
-
-	export let data: sanityData;
+    export let data: sanityData;
 </script>
 
 <BodyDiv>
-	<h1 class="h1">Projects</h1>
-	<ProjectCardsGrid projects={data.projects} />
+    <div class="prose mb-4"><h1 class="h1">Projects</h1></div>
+    <ProjectCardsGrid projects={data.projects} />
 </BodyDiv>
