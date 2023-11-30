@@ -6,8 +6,6 @@
     import type { Project } from "$lib/types/sanity";
     import ContentBody from "$lib/components/ContentBody.svelte";
 
-    /** @type {import("./$types").PageData} */
-    // src/routes/+page.js
     //Import Sanity CMS data
     interface sanityData {
         projects: Project[];

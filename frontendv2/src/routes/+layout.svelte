@@ -14,9 +14,9 @@
     });
 </script>
 
-<div class="drawer text-color">
+<div class="drawer text-color flex flex-col">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content flex flex-col">
+    <div class="drawer-content flex flex-col items-center">
         <!-- Navbar -->
         <div class="w-full navbar fixed bg-base-100 z-30">
             <div class="flex-none md:hidden">
