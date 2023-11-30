@@ -16,7 +16,9 @@
 
 <div class="drawer text-color flex flex-col">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content flex flex-col items-center">
+    <div
+        class="drawer-content flex flex-col items-center min-h-screen justify-between"
+    >
         <!-- Navbar -->
         <div class="w-full navbar fixed bg-base-100 z-30">
             <div class="flex-none md:hidden">
@@ -103,6 +105,25 @@
             </div>
         </div>
         <slot />
+        <footer
+            class="footer footer-center p-4 bg-base-300 text-base-content mt-8"
+        >
+            <aside>
+                <div class="prose">
+                    This website was built using <a
+                        class="anchor"
+                        href="https://svelte.dev">Svelte</a
+                    >,
+                    <a class="anchor" href="https://www.sanity.io/">Sanity</a>,
+                    <a class="anchor" href="https://vitejs.dev">Vite</a>,
+                    <a class="anchor" href="https://daisyui.com/">daisyUI</a>
+                    and
+                    <a class="anchor" href="https://fontawesome.com"
+                        >Fontawesome</a
+                    >
+                </div>
+            </aside>
+        </footer>
     </div>
     <div class="drawer-side z-40">
         <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"

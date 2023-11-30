@@ -4,7 +4,7 @@
     import imageUrlBuilder from "@sanity/image-url";
 
     import type { Image, Project } from "$lib/types/sanity";
-    import CodeTags from "./CodeTags.svelte";
+    import CodeTags from "../Styling/CodeTags.svelte";
 
     // Get a pre-configured url-builder from your sanity client
     const builder = imageUrlBuilder(client);

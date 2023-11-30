@@ -21,12 +21,10 @@
             ></slot
         >
     </div>
-    <div class="timeline-end mb-10">
-        <time class="font-mono italic">1998</time>
-        <div class="text-lg font-black">iMac</div>
-        iMac is a family of all-in-one Mac desktop computers designed and built by
-        Apple Inc. It has been the primary part of Apple's consumer desktop offerings
-        since its debut in August 1998, and has evolved through seven distinct forms
+    <div class="timeline-end mb-10 pt-1">
+        <time class="font-mono italic">{date}</time>
+        <div class="text-lg font-black">{title}</div>
+        {description}
     </div>
     <hr />
 </li>

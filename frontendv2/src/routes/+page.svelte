@@ -1,10 +1,10 @@
 <script lang="ts">
     import LogoSvg from "$lib/components/SelfDrawingLogoSVG.svelte";
-    import ProjectCardsGrid from "$lib/components/ProjectCardsGrid.svelte";
+    import ProjectCardsGrid from "$lib/components/Projects/ProjectCardsGrid.svelte";
     import SelfTypingCode from "$lib/components/SelfTypingCode.svelte";
 
     import type { Project } from "$lib/types/sanity";
-    import ContentBody from "$lib/components/ContentBody.svelte";
+    import ContentBody from "$lib/components/Styling/ContentBody.svelte";
 
     //Import Sanity CMS data
     interface sanityData {

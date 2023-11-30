@@ -5,13 +5,13 @@
 
     import Education from "./Education.svelte";
 
-    import BodyDiv from "$lib/components/ContentBody.svelte";
+    import BodyDiv from "$lib/components/Styling/ContentBody.svelte";
 
     let ProfilePic = "/images/profile-pic.jpg";
 </script>
 
 <BodyDiv>
-    <div class="flex flex-row">
+    <div class="flex flex-row mb-24">
         <div class="prose">
             <h1>About 🧑🏻</h1>
             <p class="text-xl">

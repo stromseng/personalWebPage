@@ -1,5 +1,5 @@
 <script lang="ts">
-    import BodyDiv from "$lib/components/ContentBody.svelte";
+    import BodyDiv from "$lib/components/Styling/ContentBody.svelte";
 </script>
 
 <BodyDiv>

@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { Project } from "$lib/types/sanity";
-    import CodeTags from "./CodeTags.svelte";
+    import CodeTags from "../Styling/CodeTags.svelte";
 
     export let project: Project;
 </script>

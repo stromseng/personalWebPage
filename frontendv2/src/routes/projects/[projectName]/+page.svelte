@@ -1,8 +1,8 @@
 <script lang="ts">
-    import ContentBody from "$lib/components/ContentBody.svelte";
-    import ProjectHeader from "$lib/components/ProjectHeader.svelte";
+    import ContentBody from "$lib/components/Styling/ContentBody.svelte";
+    import ProjectHeader from "$lib/components/Projects/ProjectHeader.svelte";
     import { onMount } from "svelte";
-    import Carousel from "$lib/components/Carousel.svelte";
+    import Carousel from "$lib/components/Projects/Carousel.svelte";
 
     import { PortableText } from "@portabletext/svelte";
     import imageUrlBuilder from "@sanity/image-url";
@@ -10,8 +10,7 @@
 
     import type { Project } from "$lib/types/sanity";
 
-    import CustomParagraph from "$lib/components/CustomParagraph.svelte";
-    import SplideCarousel from "$lib/components/SplideCarousel.svelte";
+    import CustomParagraph from "$lib/components/Sanity/CustomParagraph.svelte";
 
     let showThumbs = false;
     let showCaptions = false;

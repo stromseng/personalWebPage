@@ -1,6 +1,6 @@
 <script lang="ts">
-    import BodyDiv from "$lib/components/ContentBody.svelte";
-    import ProjectCardsGrid from "$lib/components/ProjectCardsGrid.svelte";
+    import BodyDiv from "$lib/components/Styling/ContentBody.svelte";
+    import ProjectCardsGrid from "$lib/components/Projects/ProjectCardsGrid.svelte";
     import type { Project } from "$lib/types/sanity";
 
     interface sanityData {

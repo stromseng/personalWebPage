@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Timeline from "$lib/components/Timeline.svelte";
-    import TimelineItem from "$lib/components/TimelineItem.svelte";
+    import Timeline from "$lib/components/Timeline/Timeline.svelte";
+    import TimelineItem from "$lib/components/Timeline/TimelineItem.svelte";
 </script>
 
-<h2 class="h2">Education 🎓</h2>
+<div class="prose mb-4"><h2 class="h2">Education 🎓</h2></div>
 
 <Timeline>
     <TimelineItem
@@ -12,16 +12,15 @@
         description="Bachelor in Informatics"
     >
         <svelte:fragment slot="icon">
-            <span class=" w-6 h-6">
+            <span
+                class=" w-7 h-7 bg-base-200 rounded-full flex items-center pl-1.5"
+            >
                 <i
                     class="fa-solid fa-graduation-cap fa-xs"
                     style="color: #57cfa7"
                 />
             </span>
         </svelte:fragment>
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            Bachelor in Informatics
-        </p>
     </TimelineItem>
     <TimelineItem
         title="Nydalen VGS"
@@ -29,10 +28,11 @@
         description="Studiespesialiserende"
     >
         <svelte:fragment slot="icon">
-            <span class=" w-6 h-6">
+            <span
+                class=" w-7 h-7 bg-base-200 rounded-full flex items-center pl-1.5"
+            >
                 <i class="fa-solid fa-school fa-xs" style="color: #57cfa7;" />
             </span>
         </svelte:fragment>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400"></p>
     </TimelineItem>
 </Timeline>
