@@ -2,5 +2,6 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <includedPredefinedLibrary name="Node.js Core" />
+    <excludedPredefinedLibrary name="personalWebPage/frontendv2/node_modules" />
   </component>
 </project>

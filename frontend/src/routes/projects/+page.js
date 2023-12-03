@@ -6,7 +6,7 @@ import groq from "groq";
 // @ts-ignore
 export async function load({ params }) {
     const data = await client.fetch(
-        groq`*[_type == "project"] | order(sortOdrer)`,
+        groq`*[_type == "project"] | order(sortOrder asc)`,
     );
     if (data) {
         console.log("Projects found");
