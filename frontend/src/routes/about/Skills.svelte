@@ -2,7 +2,6 @@
     import LogoSquare from "$lib/components/Styling/LogoSquare.svelte";
     import LogoCloud from "$lib/components/Styling/LogoCloud.svelte";
 
-    let ProfilePic = "/images/profile-pic.jpg";
 </script>
 
 <div class="gap-4 mt-8">
@@ -26,7 +25,7 @@
         <LogoSquare
             ><img
                 src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
-                alt=""
+                alt="Typescript logo"
                 class="w-8 h-8"
             /><span>TypeScript</span></LogoSquare
         >
@@ -48,7 +47,7 @@
         <LogoSquare
             ><img
                 src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
-                alt=""
+                alt="Bootstrap logo"
                 class="w-8 h-8"
             /><span>Bootstrap</span></LogoSquare
         >
@@ -66,6 +65,18 @@
                 />
             </svg><span>SkeletonUI</span></LogoSquare
         >
+        <LogoSquare>
+            <img src="https://mui.com/static/logo.png" alt="material ui logo" class="w-8 h-8" /><span
+                >MaterialUI</span>
+        </LogoSquare>
+        <LogoSquare>
+            <img src="/logos/nextui.png" alt="nextUI ui logo" class="w-8 h-8" /><span
+        >NextUI</span>
+        </LogoSquare>
+        <LogoSquare>
+            <img src="/logos/daisyUI.png" alt="daisyUI ui logo" class="w-8 h-8" /><span
+        >daisyUI</span>
+        </LogoSquare>
     </LogoCloud>
 
     <div class="prose"><h3>Frameworks</h3></div>
@@ -78,7 +89,7 @@
         <LogoSquare
             ><img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg"
-                alt=""
+                alt="Svelte logo"
                 class="w-8 h-8"
             /><span>Svelte</span></LogoSquare
         >
@@ -89,21 +100,21 @@
         <LogoSquare
             ><img
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                alt=""
+                alt="Python logo"
                 class="w-8 h-8"
             /><span>Python</span></LogoSquare
         >
         <LogoSquare
             ><img
                 src="https://www.svgrepo.com/show/184143/java.svg"
-                alt=""
+                alt="Java logo"
                 class="w-8 h-8"
             /><span>Java</span></LogoSquare
         >
         <LogoSquare
             ><img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-                alt=""
+                alt="C logo"
                 class="w-8 h-8"
             /><span>C</span></LogoSquare
         >
@@ -114,7 +125,7 @@
         <LogoSquare
             ><img
                 src="https://pocketbase.io/images/logo.svg"
-                alt=""
+                alt="Pocketbase logo"
                 class="w-8 h-8"
             /><span>Pocketbase</span></LogoSquare
         >
@@ -138,7 +149,7 @@
         <LogoSquare
             ><img
                 src="https://vitejs.dev/logo-with-shadow.png"
-                alt=""
+                alt="Vite Logo"
                 class="w-8 h-8"
             /><span>Vite</span></LogoSquare
         >
@@ -147,14 +158,14 @@
         <LogoSquare
             ><img
                 src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt=""
+                alt="Figma logo"
                 class="w-8 h-8"
             /><span>Figma</span></LogoSquare
         >
         <LogoSquare
             ><img
                 src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg"
-                alt=""
+                alt="Notion logo"
                 class="w-8 h-8"
             /><span>Notion</span></LogoSquare
         >
@@ -171,14 +182,14 @@
     <div class="prose"><h3>Teamwork</h3></div>
     <LogoCloud>
         <LogoSquare
-            ><img src="../logos/agile.png" alt="" class="w-8 h-8" /><span
+            ><img src="logos/agile.png" alt="" class="w-8 h-8" /><span
                 >Agile</span
             ></LogoSquare
         >
         <LogoSquare
             ><img
                 src="https://www.scrum.org/themes/custom/scrumorg_v2/assets/images/logo-250.png"
-                alt=""
+                alt="Scrum logo"
                 class="w-8 h-8"
             /><span>Scrum</span></LogoSquare
         >
