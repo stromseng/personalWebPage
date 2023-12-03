@@ -57,6 +57,7 @@
             </div>
             <div class="navbar-center hidden md:flex">
                 <ul class="menu menu-horizontal px-1">
+                    <li><a href="/">Home</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/projects">Projects</a></li>
                 </ul>
