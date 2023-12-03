@@ -34,6 +34,7 @@ export interface Child {
 }
 
 export interface Image {
+    alt: string;
     _key:  string;
     _type: string;
     asset: Asset;

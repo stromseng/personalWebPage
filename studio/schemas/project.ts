@@ -1,5 +1,3 @@
-import portableText from './portableText'
-
 export default {
   name: 'project',
   title: 'Project',

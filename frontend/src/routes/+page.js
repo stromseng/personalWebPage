@@ -4,7 +4,7 @@ import client from "$lib/sanityClient";
 
 import groq from "groq";
 
-// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function load({ params }) {
     const data = await client.fetch(
         groq`*[_type == "project"] | order(sortOrder asc)`,
