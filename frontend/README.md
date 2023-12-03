@@ -1,11 +1,11 @@
 # TODO
-- [ ] Add footer back
-- [ ] Fix About page Timeline
-- [ ] Fix About page Skills
+- [x] Add footer back
+- [x] Fix About page Timeline
+- [x] Fix About page Skills
 - [x] Fix Projects prose typography
 - [ ] Update this Readme
 - [ ] Make sure Sanity setup is good. Maybe use https://www.sanity.io/plugins/sanity-codegen ?
-- [ ] Fix project web link in card grid
+- [x] Fix project web link in card grid
 
 # create-svelte
 

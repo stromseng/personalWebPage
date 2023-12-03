@@ -15,7 +15,7 @@
         </div>
         <div>
             {#if project.hostedLink}
-                <a href={project.hostedLink}>
+                <a href={project.hostedLink} target="_blank">
                     <button class="btn">
                         <i class="fa-solid fa-globe fa-lg" />
                         <span>Visit</span>
@@ -23,7 +23,7 @@
                 </a>
             {/if}
             {#if project.githubLink}
-                <a href={project.githubLink}>
+                <a href={project.githubLink} target="_blank">
                     <button class="btn">
                         <i class="fa-brands fa-github fa-lg" />
                         <span>GitHub</span>
