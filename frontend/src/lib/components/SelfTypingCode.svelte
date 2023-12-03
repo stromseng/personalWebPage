@@ -3,6 +3,6 @@
     import SelfTypingText from "./SelfTypingText.svelte";
 </script>
 
-<div>
+<div class="JetBrainsMono font-bold">
     <SelfTypingText {text} />
 </div>

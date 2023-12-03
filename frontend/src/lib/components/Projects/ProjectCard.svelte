@@ -22,22 +22,26 @@
 </script>
 
 <div class="card shadow-xl bg-base-200">
-    <a href={siteUrl}>
+
         <figure>
+            <a href={siteUrl}>
             <img
                 src={urlFor(project.mainImage).url()}
                 class="w-full aspect-[21/9] object-cover object-left"
                 alt="Post"
             />
+            </a>
         </figure>
         <div class="card-body">
+            <a href={siteUrl}>
             <h2 class="card-title">{project.title}</h2>
+            </a>
             <CodeTags tags={project.tags} />
             <p>
                 {project.shortDescription}
             </p>
         </div>
-    </a>
+
     {#if project.githubLink || project.hostedLink}
         <hr class="opacity-50" />
         <div class="flex flex-row">

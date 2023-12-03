@@ -73,6 +73,6 @@
     }
 </script>
 
-<span class="code">
+<span class="JetBrainsMono">
     {textBuilder}{#if cursorVisible}{cursorText}{:else}&boxv;{/if}
 </span>

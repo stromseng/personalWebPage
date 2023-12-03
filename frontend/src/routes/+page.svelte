@@ -19,7 +19,7 @@
         <div class="w-full">
             <div class="">
                 <div class="prose"><p class="">Hi there 👋 I'm</p></div>
-                <h1 class="h1 text-6xl sm:text-7xl code">
+                <h1 class="h1 text-6xl sm:text-7xl JetBrainsMono font-bold">
                     Magnus <br /> Alexander <br /> Strømseng
                 </h1>
             </div>

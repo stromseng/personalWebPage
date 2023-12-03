@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-.code {
+.JetBrainsMono {
     font-family: "JetBrains Mono", monospace;
-    font-weight: bold;
 }
