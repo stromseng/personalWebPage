@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import "../app.css";
 
     // Supports weights 100-800
@@ -12,10 +12,20 @@
         themeChange(false);
         // 👆 false parameter is required for svelte
     });
+
+    let drawerCheckbox : HTMLInputElement;
+
+    function toggleDrawer() {
+        drawerCheckbox.checked = !drawerCheckbox.checked;
+    }
+
+
+
+
 </script>
 
 <div class="drawer text-color flex flex-col">
-    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+    <input id="my-drawer" type="checkbox" class="drawer-toggle" bind:this={drawerCheckbox}/>
     <div
         class="drawer-content flex flex-col items-center min-h-screen justify-between"
     >
@@ -47,8 +57,8 @@
                     <div class="avatar">
                         <div class="w-10 rounded-full">
                             <img
-                                src="/images/profile-pic.jpg"
                                 alt="Magnus Strømseng"
+                                src="/images/profile-pic.jpg"
                             />
                         </div>
                     </div>
@@ -56,7 +66,7 @@
                 </div>
             </div>
             <div class="navbar-center hidden md:flex">
-                <ul class="menu menu-horizontal px-1">
+                <ul class="menu menu-horizontal px-1 text-base">
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/projects">Projects</a></li>
@@ -129,11 +139,11 @@
     <div class="drawer-side z-40">
         <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"
         ></label>
-        <ul class="menu p-4 w-80 min-h-full bg-base-200">
+        <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base">
             <!-- Sidebar content here -->
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
+            <li><a on:click={toggleDrawer} href="/">Home</a></li>
+            <li><a on:click={toggleDrawer} href="/about">About</a></li>
+            <li><a on:click={toggleDrawer} href="/projects">Projects</a></li>
         </ul>
     </div>
 </div>
