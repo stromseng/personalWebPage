@@ -3,8 +3,7 @@
 import client from "$lib/sanityClient";
 import groq from "groq";
 
-// @ts-ignore
-export async function load({ params }) {
+export async function load() {
     const data = await client.fetch(
         groq`*[_type == "project"] | order(sortOrder asc)`,
     );
