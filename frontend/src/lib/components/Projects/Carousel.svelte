@@ -90,8 +90,7 @@
                     currentSlide(i);
                 }}
                 bind:this={dotRefs[i]}
-                class:active={i === slideIndex}
-            ></button>
+                class:active={i === slideIndex}></button>
         {/each}
     </div>
 {/if}

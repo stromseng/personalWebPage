@@ -57,8 +57,7 @@
                     block: {
                         normal: CustomParagraph,
                     },
-                }}
-            />
+                }} />
         </div>
     {:else}
         <p>Error: Project not found</p>

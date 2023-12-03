@@ -1,14 +1,15 @@
 # TODO
-- [x] Add footer back
-- [x] Fix About page Timeline
-- [x] Fix About page Skills
-- [x] Fix Projects prose typography
-- [ ] Update this Readme
-- [ ] Make sure Sanity setup is good. Maybe use https://www.sanity.io/plugins/sanity-codegen ?
-- [x] Fix project web link in card grid
 
+-   [x] Add footer back
+-   [x] Fix About page Timeline
+-   [x] Fix About page Skills
+-   [x] Fix Projects prose typography
+-   [ ] Update this Readme
+-   [ ] Make sure Sanity setup is good. Maybe use https://www.sanity.io/plugins/sanity-codegen ?
+-   [x] Fix project web link in card grid
 
 ## Developing
+
 Install dependencies with `npm install`
 
 Run the development server with  

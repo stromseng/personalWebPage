@@ -10,32 +10,26 @@
     <TimelineItem
         title="Linderud IL, Camp Linderud"
         date="2021-Present"
-        description="Team Leader"
-    >
+        description="Team Leader">
         <svelte:fragment slot="icon">
             <span
-                class=" w-7 h-7 bg-base-200 rounded-full flex items-center pl-1.5"
-            >
+                class=" w-7 h-7 bg-base-200 rounded-full flex items-center pl-1.5">
                 <i
                     class="fa-solid fa-person-running fa-sm"
-                    style="color : #78D0E3"
-                />
+                    style="color : #78D0E3" />
             </span>
         </svelte:fragment>
     </TimelineItem>
     <TimelineItem
         title="Linderud IL, Camp Linderud"
         date="2017-2020"
-        description="Camp Staff"
-    >
+        description="Camp Staff">
         <svelte:fragment slot="icon">
             <span
-                class=" w-7 h-7 bg-base-200 rounded-full flex items-center pl-1.5"
-            >
+                class=" w-7 h-7 bg-base-200 rounded-full flex items-center pl-1.5">
                 <i
                     class="fa-solid fa-person-running fa-sm"
-                    style="color : #78D0E3"
-                />
+                    style="color : #78D0E3" />
             </span>
         </svelte:fragment>
     </TimelineItem>

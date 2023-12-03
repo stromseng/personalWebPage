@@ -29,8 +29,7 @@
                     "Informatics Student",
                     "Tech Enthusiast",
                     "E-Sports Player",
-                ]}
-            />
+                ]} />
             <div class="">
                 <p class="text-xl my-2 max-w-xs">
                     A Fullstack Developer and Informatics Student from Norway.
