@@ -2,4 +2,4 @@
 My Personal Website  
 Hosted on https://magnus.stromseng.net  
 Monorepo for both vite/sveltekit and sanity.  
-See `/frontend` and `/studio`
+See [`/frontend`](/frontend) and [`/studio`](/studio) for more info.
