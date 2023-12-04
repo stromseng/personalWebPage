@@ -1,7 +1,6 @@
 <script lang="ts">
     import ContentBody from "$lib/components/Styling/ContentBody.svelte";
     import ProjectHeader from "$lib/components/Projects/ProjectHeader.svelte";
-    import { onMount } from "svelte";
     import Carousel from "$lib/components/Projects/Carousel.svelte";
 
     import { PortableText } from "@portabletext/svelte";
@@ -11,9 +10,6 @@
     import type { Project } from "$lib/types/sanity";
 
     import CustomParagraph from "$lib/components/Sanity/CustomParagraph.svelte";
-
-    let showThumbs = false;
-    let showCaptions = false;
 
     export let data;
 
@@ -27,6 +23,7 @@
     // Then we like to make a simple function like this that gives the
     // builder an image and returns the builder for you to specify additional
     // parameters:
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     function urlFor(source: any) {
         return builder.image(source);
     }

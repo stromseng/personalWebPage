@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface Project {
     _createdAt: Date;
     _id: string;

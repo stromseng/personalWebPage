@@ -83,7 +83,7 @@
 <!-- The dots/circles -->
 {#if images.length > 1}
     <div style="text-align:center">
-        {#each images as image, i}
+        {#each images as _image, i}
             <button
                 class="dot"
                 on:click={() => {

@@ -2,7 +2,6 @@
 
 import client from "$lib/sanityClient";
 
-// @ts-ignore
 export async function load({ params }) {
     console.log(`Trying to find project ${params.projectName}`);
     const data = await client.fetch(

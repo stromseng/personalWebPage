@@ -5,6 +5,7 @@ module.exports = {
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:svelte/recommended",
+        "plugin:svelte/prettier",
         "prettier",
     ],
     parser: "@typescript-eslint/parser",
@@ -13,6 +14,7 @@ module.exports = {
         sourceType: "module",
         ecmaVersion: 2020,
         extraFileExtensions: [".svelte"],
+        project: "./tsconfig.json",
     },
     env: {
         browser: true,
@@ -25,6 +27,12 @@ module.exports = {
             parser: "svelte-eslint-parser",
             parserOptions: {
                 parser: "@typescript-eslint/parser",
+            },
+            rules: {
+                "@typescript-eslint/no-unused-vars": [
+                    "error",
+                    { argsIgnorePattern: "^_" },
+                ],
             },
         },
     ],
