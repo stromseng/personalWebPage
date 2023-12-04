@@ -159,7 +159,7 @@
     <div class="prose"><h3>Teamwork</h3></div>
     <LogoCloud>
         <LogoSquare
-            ><img src="logos/agile.png" alt="" class="w-8 h-8" /><span
+            ><img src="/logos/agile.png" alt="" class="w-8 h-8" /><span
                 >Agile</span
             ></LogoSquare>
         <LogoSquare

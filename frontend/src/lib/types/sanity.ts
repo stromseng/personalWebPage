@@ -17,6 +17,8 @@ export interface Project {
     tags: string[];
     title: string;
     _updatedAt: Date;
+    newIndicator?: boolean;
+    newIndicatorText?: string;
 }
 
 export interface Body {

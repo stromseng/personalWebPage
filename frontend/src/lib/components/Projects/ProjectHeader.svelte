@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { Project } from "$lib/types/sanity";
-    import CodeTags from "../Styling/CodeTags.svelte";
+    import ConditionalIndicatorWrapper from "$lib/components/ConditionalIndicatorWrapper.svelte";
+    import CodeTags from "$lib/components/Styling/CodeTags.svelte";
 
     export let project: Project;
 </script>
@@ -8,7 +9,11 @@
 <div class="mb-4">
     <div class="flex flex-row justify-between">
         <div>
-            <div class="prose"><h1>{project.title}</h1></div>
+            <ConditionalIndicatorWrapper
+                condition={project.newIndicator}
+                text={project.newIndicatorText}>
+                <div class="prose"><h1>{project.title}</h1></div>
+            </ConditionalIndicatorWrapper>
             <div class="mb-1 mt-2">
                 <CodeTags tags={project.tags} />
             </div>

@@ -5,6 +5,7 @@
 
     import type { Project } from "$lib/types/sanity";
     import CodeTags from "../Styling/CodeTags.svelte";
+    import ConditionalIndicatorWrapper from "../ConditionalIndicatorWrapper.svelte";
 
     // Get a pre-configured url-builder from your sanity client
     const builder = imageUrlBuilder(client);
@@ -31,9 +32,15 @@
                 alt="Post" />
         </a>
     </figure>
+
     <div class="card-body">
         <a href={siteUrl}>
-            <h2 class="card-title">{project.title}</h2>
+            <ConditionalIndicatorWrapper
+                condition={project.newIndicator}
+                text={project.newIndicatorText}>
+                <h2 class="card-title">
+                    {project.title}
+                </h2></ConditionalIndicatorWrapper>
         </a>
         <CodeTags tags={project.tags} />
         <p>

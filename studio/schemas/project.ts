@@ -12,10 +12,25 @@ export default {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
+      description: 'This is the URL path for the project. It should be unique.',
       options: {
         source: 'title',
         maxLength: 96,
       },
+    },
+    {
+      name: 'newIndicator',
+      title: 'New Indicator',
+      type: 'boolean',
+      initialValue: false,
+    },
+    {
+      name: 'newIndicatorText',
+      title: 'New Indicator Text',
+      type: 'string',
+      description:
+        'Text to display on the new indicator. A small colored badge will appear on the project card.',
+      hidden: ({document}: {document: {newIndicator?: boolean}}) => !document?.newIndicator,
     },
     {
       name: 'shortDescription',
