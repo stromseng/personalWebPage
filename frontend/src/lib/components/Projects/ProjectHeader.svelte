@@ -7,12 +7,16 @@
 </script>
 
 <div class="mb-4">
-    <div class="flex flex-row justify-between">
+    <div class="flex flex-row justify-between flex-wrap gap-2">
         <div>
             <ConditionalIndicatorWrapper
                 condition={project.newIndicator}
                 text={project.newIndicatorText}>
-                <div class="prose"><h1>{project.title}</h1></div>
+                <div class="prose">
+                    <h1 class="[overflow-wrap:anywhere]">
+                        {project.title}
+                    </h1>
+                </div>
             </ConditionalIndicatorWrapper>
             <div class="mb-1 mt-2">
                 <CodeTags tags={project.tags} />
