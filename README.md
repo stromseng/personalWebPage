@@ -2,6 +2,8 @@
 
 Hosted on https://magnus.stromseng.dev
 
+Now using Cloudflare DNS and Vercel hosting for a great developer experience.
+
 This repository contains the code for my personal web page. It's a monorepo divided into two main parts: the frontend and the studio.
 See [`/frontend`](/frontend) and [`/studio`](/studio) for more info.
 
