@@ -15,7 +15,7 @@
         "@portabletext/svelte": "^2.1.4",
         "@sveltejs/adapter-auto": "^2.0.0",
         "@sveltejs/adapter-static": "^2.0.3",
-        "@sveltejs/kit": "^1.27.4",
+        "@sveltejs/kit": "^1.30.3",
         "@tailwindcss/typography": "^0.5.10",
         "@typescript-eslint/eslint-plugin": "^6.13.1",
         "@typescript-eslint/parser": "^6.13.1",
