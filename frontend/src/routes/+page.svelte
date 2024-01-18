@@ -5,6 +5,7 @@
 
     import type { Project } from "$lib/types/sanity";
     import ContentBody from "$lib/components/Styling/ContentBody.svelte";
+    import ScrollableHeroes from "$lib/components/ScrollableHeroes/ScrollableHeroes.svelte";
 
     //Import Sanity CMS data
     interface sanityData {
@@ -62,6 +63,13 @@
             whenever I can. You can read more about me <a href="/about">here</a>
         </p>
     </div>
+
+    <!-- Spacer Div -->
+    <div class="h-48"></div>
+
+    <!-- Scrolling Showcase -->
+
+    <ScrollableHeroes />
 
     <!-- Projects -->
     <div class="flex flex-col gap-2">

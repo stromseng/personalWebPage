@@ -44,6 +44,7 @@
         "@vercel/analytics": "^1.1.2",
         "@vercel/speed-insights": "^1.0.5",
         "groq": "^3.20.1",
+        "gsap": "^3.12.4",
         "theme-change": "^2.5.0"
     }
 }
