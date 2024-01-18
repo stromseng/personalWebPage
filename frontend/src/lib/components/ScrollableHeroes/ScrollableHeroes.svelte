@@ -25,20 +25,28 @@
 </div>
 
 <div class="flex flex-col gap-4">
+    <!-- Svelte -->
     <div class="flex flex-row items-center gap-12">
-        <div class="text-5xl">Svelte</div>
-        <Icon icon="logos:svelte-icon" width="100" />
-        <div class="mockup-browser border bg-base-300">
-            <div class="mockup-browser-toolbar">
-                <div class="input">https://daisyui.com</div>
+        <div class="hero bg-base-200 rounded-lg">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <Icon icon="logos:svelte-icon" width="100" />
+                <Icon icon="logos:react" width="100" />
+                <div>
+                    <div class="flex flex-row">
+                        <h1 class="text-5xl font-bold">
+                            <span class="text-info">React</span> &
+                            <span class="text-error">Svelte</span>
+                        </h1>
+                    </div>
+                    <p class="py-6">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                        assumenda excepturi exercitationem quasi. In deleniti
+                        eaque aut repudiandae et a id nisi.
+                    </p>
+                </div>
             </div>
-            <div class="flex justify-center px-4 py-16 bg-base-200">Hello!</div>
         </div>
-    </div>
 
-    <div class="flex flex-row items-center gap-12">
-        <div class="text-5xl">React</div>
-        <Icon icon="logos:react" width="100" />
         <div class="mockup-browser border bg-base-300">
             <div class="mockup-browser-toolbar">
                 <div class="input">https://daisyui.com</div>
