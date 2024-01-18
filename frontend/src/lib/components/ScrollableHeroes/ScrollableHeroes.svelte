@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Icon from '@iconify/svelte';
+    
     import { onMount } from "svelte";
     import { gsap } from "gsap";
     import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
