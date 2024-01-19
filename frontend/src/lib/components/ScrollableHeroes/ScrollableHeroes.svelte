@@ -1,4 +1,6 @@
 <script lang="ts">
+    import BackendLogoCard from "./BackendLogoCard.svelte";
+
     import Icon from "@iconify/svelte";
 
     import { onMount } from "svelte";
@@ -59,19 +61,29 @@
                         </h1>
                     </div>
                     <p class="py-6">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                        assumenda excepturi exercitationem quasi. In deleniti
-                        eaque aut repudiandae et a id nisi.
+                        Having made multiple full stack projects with React and
+                        it's ecosystem, I have a good understanding of the
+                        framework and how to use it alongside the most popular
+                        libraries.
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="mockup-browser border border-black bg-base-300 react card1">
-            <div class="mockup-browser-toolbar">
-                <div class="input">Lendables</div>
-            </div>
-            <div class="flex justify-center px-4 py-16 bg-base-200">React!</div>
+        <!-- Logo Cloud of React Libraries -->
+        <div
+            class="grid max-w-sm grid-cols-4 gap-4 px-10 pt-10 md:max-w-none md:gap-6 xl:px-6 xl:pt-0 [&>*:nth-child(2n-1)]:-translate-y-[calc(50%+1rem/2)] md:[&>*:nth-child(2n-1)]:-translate-y-[calc(50%+1.5rem/2)]">
+            <Icon icon="simple-icons:vercel" color="white" width="50" />
+            <Icon icon="skill-icons:nextjs-dark" color="#ffda44" width="50" />
+            <Icon icon="simple-icons:nextui" color="white" width="50" />
+            <Icon icon="simple-icons:mui" width="50" color="#007fff" />
+            <Icon icon="simple-icons:shadcnui" width="50" />
+            <Icon icon="devicon:reactrouter" width="50" />
+            <Icon icon="simple-icons:recoil" color="white" width="50" />
+            <Icon
+                icon="simple-icons:apollographql"
+                color="#290ba0"
+                width="50" />
         </div>
 
         <!-- Svelte -->
@@ -88,25 +100,15 @@
                         </h1>
                     </div>
                     <p class="py-6">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                        assumenda excepturi exercitationem quasi. In deleniti
-                        eaque aut repudiandae et a id nisi.
+                        My favourite framework. I have made multiple projects in
+                        Svelte & SvelteKit, and love the simplicity of it.
                     </p>
                 </div>
             </div>
         </div>
-
-        <div class="mockup-browser border border-black bg-base-300 svelte">
-            <div class="mockup-browser-toolbar">
-                <div class="input">magnus.stromseng.dev</div>
-            </div>
-            <div class="flex justify-center px-4 py-16 bg-base-200">
-                Svelte!
-            </div>
-        </div>
     </div>
 
-    <div class="hero min-h-screen bg-base-200 rounded-lg mobile-first">
+    <div class="hero bg-base-200 rounded-lg mobile-first">
         <div class="hero-content text-center">
             <div class="max-w-md">
                 <h1 class="text-5xl font-bold">Mobile first design</h1>
@@ -114,30 +116,11 @@
                     Using tailwindcss, css flexbox, media queries and
                     javascript.
                 </p>
-                <div class="flex flex-row gap-8">
-                    <div class="mockup-phone">
-                        <div class="camera"></div>
-                        <div class="display">
-                            <div class="artboard artboard-demo phone-1">
-                                Hi.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mockup-phone">
-                        <div class="camera"></div>
-                        <div class="display">
-                            <div class="artboard artboard-demo phone-1">
-                                Hi.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mockup-phone">
-                        <div class="camera"></div>
-                        <div class="display">
-                            <div class="artboard artboard-demo phone-1">
-                                Hi.
-                            </div>
-                        </div>
+
+                <div class="mockup-phone">
+                    <div class="camera"></div>
+                    <div class="display">
+                        <div class="artboard artboard-demo phone-1">Hi.</div>
                     </div>
                 </div>
             </div>
@@ -150,67 +133,49 @@
             class="text-5xl font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
             Backend's such as
         </h1>
-        <div class="flex flex-row gap-8 mt-8">
-            <div class="card w-24 h-24 bg-neutral text-neutral-content">
-                <div class="flex items-center flex-col justify-center">
-                    <Icon icon="devicon:neo4j" width="50" />
-                    <h2 class="card-title">Neo4J</h2>
-                </div>
-            </div>
-            <div class="card w-24 h-24 bg-neutral text-neutral-content">
-                <div class="flex items-center flex-col justify-center">
-                    <Icon icon="vscode-icons:file-type-firebase" width="50" />
-                    <h2 class="card-title">Firebase</h2>
-                </div>
-            </div>
-            <div class="card w-24 h-24 bg-neutral text-neutral-content">
-                <div class="flex items-center flex-col justify-center">
-                    <Icon
-                        icon="simple-icons:mongodb"
-                        color="#12924f"
-                        width="50" />
-                    <h2 class="card-title">MongoDB</h2>
-                </div>
-            </div>
-            <div class="card w-24 h-24 bg-neutral text-neutral-content">
-                <div class="flex items-center flex-col justify-center">
-                    <Icon icon="simple-icons:pocketbase" width="50" />
-                    <h2 class="card-title">Pocketbase</h2>
-                </div>
-            </div>
-            <div class="w-24 h-24 bg-neutral text-neutral-content rounded-2xl">
-                <div class="flex items-center flex-col justify-end h-full pb-1">
-                    <Icon icon="devicon:mysql" width="50" />
-                    <h2 class="card-title">MySQL</h2>
-                </div>
-            </div>
-            <div class="w-24 h-24 bg-neutral text-neutral-content rounded-2xl">
-                <div class="flex items-center flex-col justify-end h-full pb-1">
-                    <Icon
-                        icon="simple-icons:sanity"
-                        color="#f03e2f"
-                        width="50" />
-                    <h2 class="card-title">Sanity</h2>
-                </div>
-            </div>
+        <div class="flex flex-row gap-8 mt-8 flex-wrap justify-center">
+            <BackendLogoCard>
+                <Icon icon="devicon:neo4j" width="50" />
+                <h2 class="font-semibold">Neo4J</h2>
+            </BackendLogoCard>
+            <BackendLogoCard
+                ><Icon icon="vscode-icons:file-type-firebase" width="50" />
+                <h2 class="font-semibold">Firebase</h2>
+            </BackendLogoCard>
+            <BackendLogoCard
+                ><Icon icon="simple-icons:mongodb" color="#12924f" width="50" />
+                <h2 class="font-semibold">MongoDB</h2>
+            </BackendLogoCard>
+            <BackendLogoCard
+                ><Icon icon="simple-icons:pocketbase" width="50" />
+                <h2 class="font-semibold">Pocketbase</h2>
+            </BackendLogoCard>
+            <BackendLogoCard
+                ><Icon icon="devicon:mysql" width="50" />
+                <h2 class="font-semibold">MySQL</h2>
+            </BackendLogoCard>
+            <BackendLogoCard
+                ><Icon icon="simple-icons:sanity" color="#f03e2f" width="50" />
+                <h2 class="font-semibold">Sanity</h2>
+            </BackendLogoCard>
         </div>
         <h1
-            class="text-3xl mt-4 font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+            class="text-3xl mt-4 font-bold bg-gradient-to-r from-purple-600 via-blue-500 to-indigo-700 inline-block text-transparent bg-clip-text">
             Communicating with
         </h1>
         <div class="flex flex-row gap-8 mt-8">
-            <div class="card w-24 h-24 bg-neutral text-neutral-content">
-                <div class="flex items-center flex-col justify-center">
-                    <Icon icon="dashicons:rest-api" width="50" />
-                    <h2 class="card-title">REST</h2>
-                </div>
-            </div>
-            <div class="card w-24 h-24 bg-neutral text-neutral-content">
-                <div class="flex items-center flex-col justify-center">
-                    <Icon icon="logos:graphql" width="50" />
-                    <h2 class="card-title">GraphQL</h2>
-                </div>
-            </div>
+            <BackendLogoCard>
+                <Icon icon="dashicons:rest-api" color="#4283f4" width="50" />
+                <h2 class="card-title">REST</h2>
+            </BackendLogoCard>
+            <BackendLogoCard>
+                <Icon icon="mdi:sql-query" color="#ffda44" width="50" />
+                <h2 class="card-title">SQL</h2>
+            </BackendLogoCard>
+            <BackendLogoCard>
+                <Icon icon="logos:graphql" width="50" />
+                <h2 class="card-title">GraphQL</h2>
+            </BackendLogoCard>
         </div>
     </div>
 </div>
