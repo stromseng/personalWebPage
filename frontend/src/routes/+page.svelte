@@ -73,7 +73,9 @@
 
     <!-- Projects -->
     <div class="flex flex-col gap-2">
-        <div class="prose mb-6"><h2 class="">Projects</h2></div>
+        <div class="text-5xl font-bold mb-10">
+            <h2 class="text-center">Projects</h2>
+        </div>
         {#if data.projects && data.projects.length}
             <ProjectCardsGrid projects={data.projects} />
         {:else}
