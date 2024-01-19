@@ -24,67 +24,59 @@
     I have experience in
 </div>
 
-<div class="flex flex-col gap-4">
-    <!-- Svelte -->
-    <div class="flex flex-col lg:flex-row items-center gap-12">
-        <div class="hero bg-base-200 rounded-lg">
-            <div class="hero-content flex-col">
-                <div>
-                    <div class="flex flex-row">
-                        <h1 class="text-5xl font-bold">
-                            <Icon
-                                icon="logos:react"
-                                class="inline"
-                                width="50" />
-                            <span class="text-info">React</span>
-                        </h1>
-                    </div>
-                    <p class="py-6">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                        assumenda excepturi exercitationem quasi. In deleniti
-                        eaque aut repudiandae et a id nisi.
-                    </p>
+<div class="grid lg:grid-cols-2 gap-6">
+    <!-- React -->
+    <div class="hero bg-base-200 rounded-lg">
+        <div class="hero-content flex-col">
+            <div>
+                <div class="flex flex-row">
+                    <h1 class="text-5xl font-bold">
+                        <Icon icon="logos:react" class="inline" width="50" />
+                        <span class="text-info">React</span>
+                    </h1>
                 </div>
+                <p class="py-6">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                    assumenda excepturi exercitationem quasi. In deleniti eaque
+                    aut repudiandae et a id nisi.
+                </p>
             </div>
-        </div>
-
-        <div class="mockup-browser border bg-base-300 basis-1/2 grow shrink-0">
-            <div class="mockup-browser-toolbar">
-                <div class="input">https://daisyui.com</div>
-            </div>
-            <div class="flex justify-center px-4 py-16 bg-base-200">React!</div>
         </div>
     </div>
-    <!-- Svelte -->
-    <div class="flex flex-col lg:flex-row items-center gap-12">
-        <div class="hero bg-base-200 rounded-lg">
-            <div class="hero-content flex-col">
-                <div>
-                    <div class="flex flex-row">
-                        <h1 class="text-5xl font-bold">
-                            <Icon
-                                icon="logos:svelte-icon"
-                                class="inline"
-                                width="50" />
-                            <span class="text-error">Svelte</span>
-                        </h1>
-                    </div>
-                    <p class="py-6">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                        assumenda excepturi exercitationem quasi. In deleniti
-                        eaque aut repudiandae et a id nisi.
-                    </p>
-                </div>
-            </div>
-        </div>
 
-        <div class="mockup-browser border bg-base-300 grow shrink-0">
-            <div class="mockup-browser-toolbar">
-                <div class="input">https://daisyui.com</div>
-            </div>
-            <div class="flex justify-center px-4 py-16 bg-base-200">
-                Svelte!
+    <div class="mockup-browser border border-black bg-base-300">
+        <div class="mockup-browser-toolbar">
+            <div class="input">https://daisyui.com</div>
+        </div>
+        <div class="flex justify-center px-4 py-16 bg-base-200">React!</div>
+    </div>
+
+    <!-- Svelte -->
+    <div class="hero bg-base-200 rounded-lg">
+        <div class="hero-content flex-col">
+            <div>
+                <div class="flex flex-row">
+                    <h1 class="text-5xl font-bold">
+                        <Icon
+                            icon="logos:svelte-icon"
+                            class="inline"
+                            width="50" />
+                        <span class="text-error">Svelte</span>
+                    </h1>
+                </div>
+                <p class="py-6">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                    assumenda excepturi exercitationem quasi. In deleniti eaque
+                    aut repudiandae et a id nisi.
+                </p>
             </div>
         </div>
+    </div>
+
+    <div class="mockup-browser border border-black bg-base-300">
+        <div class="mockup-browser-toolbar">
+            <div class="input">https://daisyui.com</div>
+        </div>
+        <div class="flex justify-center px-4 py-16 bg-base-200">Svelte!</div>
     </div>
 </div>
