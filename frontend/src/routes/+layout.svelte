@@ -94,13 +94,13 @@
                 </label>
                 <a
                     class="btn btn-ghost btn-circle"
-                    href="https://github.com/Thrywyn"
+                    href="https://github.com/stromseng"
                     target="_blank">
                     <i class="fa-brands fa-github fa-2xl"> </i>
                 </a>
                 <a
                     class="btn btn-ghost btn-circle"
-                    href="https://www.linkedin.com/in/magnus-alexander-str%C3%B8mseng-063112214/"
+                    href="https://www.linkedin.com/in/stromseng/"
                     target="_blank">
                     <i class="fa-brands fa-linkedin fa-2xl"></i>
                 </a>
