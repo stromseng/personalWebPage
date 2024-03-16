@@ -6,7 +6,7 @@
 -   [x] Fix Projects prose typography
 -   [x] Update this Readme
 -   [ ] ~~Make sure Sanity setup is good. Maybe use https://www.sanity.io/plugins/sanity-codegen ?~~
-    - Wait for v 1.0.0 to release before implementing.
+    -   Wait for v 1.0.0 to release before implementing.
 -   [x] Fix project web link in card grid
 -   [ ] Switch to Iconify https://iconify.design/ for my icons, both navbar and skill section
 
