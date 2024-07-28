@@ -1,1 +1,8 @@
-{}
+{
+    "name": "my-personal-website",
+    "private": true,
+    "workspaces": [
+        "frontend",
+        "studio"
+    ]
+}
