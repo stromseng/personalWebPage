@@ -40,7 +40,8 @@
                 text={project.newIndicatorText}>
                 <h2 class="card-title">
                     {project.title}
-                </h2></ConditionalIndicatorWrapper>
+                </h2>
+            </ConditionalIndicatorWrapper>
         </a>
         <CodeTags tags={project.tags} />
         <p>
