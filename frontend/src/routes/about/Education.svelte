@@ -8,6 +8,19 @@
 <Timeline>
     <TimelineItem
         title="Norwegian Institute of Technology and Science"
+        date="2024-2026"
+        description="Master in Informatics - Artificial Intelligence">
+        <svelte:fragment slot="icon">
+            <span
+                class=" w-7 h-7 bg-base-200 rounded-full flex items-center pl-1.5">
+                <i
+                    class="fa-solid fa-graduation-cap fa-xs"
+                    style="color: #57cfa7" />
+            </span>
+        </svelte:fragment>
+    </TimelineItem>
+    <TimelineItem
+        title="Norwegian Institute of Technology and Science"
         date="2021-2024"
         description="Bachelor in Informatics">
         <svelte:fragment slot="icon">
