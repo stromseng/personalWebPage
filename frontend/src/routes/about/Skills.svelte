@@ -90,6 +90,13 @@
                 class="w-8 h-8" />
             <span>Svelte</span>
         </LogoSquare>
+        <LogoSquare>
+            <img
+                src="/logos/astro.svg"
+                alt="Astro logo"
+                class="w-8 h-8"
+                srcset="" /><span>Astro</span>
+        </LogoSquare>
     </LogoCloud>
 
     <div class="prose"><h3>Languages</h3></div>
@@ -105,10 +112,8 @@
                 alt="Java logo"
                 class="w-8 h-8" /><span>Java</span></LogoSquare>
         <LogoSquare
-            ><img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-                alt="C logo"
-                class="w-8 h-8" /><span>C</span></LogoSquare>
+            ><i class="fa-brands fa-rust fa-2xl"></i><span>Rust</span
+            ></LogoSquare>
     </LogoCloud>
 
     <div class="prose"><h3>Databases</h3></div>
