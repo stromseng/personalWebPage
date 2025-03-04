@@ -11,7 +11,7 @@
 </script>
 
 <BodyDiv>
-    <div class="flex flex-row mb-24">
+    <div class="flex flex-row mb-4 gap-4 md:mb-24">
         <div class="prose">
             <h1>About 🧑🏻</h1>
             <p class="text-xl">
@@ -23,10 +23,15 @@
                 source projects whenever I can.
             </p>
         </div>
-        <div class="avatar not-prose self-center">
+        <div class="avatar not-prose self-center hidden md:block">
             <div class="w-24 h-24 rounded-full mx-auto">
                 <img src={ProfilePic} alt="Magnus Strømseng" />
             </div>
+        </div>
+    </div>
+    <div class="avatar not-prose self-center md:hidden">
+        <div class="w-24 h-24 rounded-full mx-auto">
+            <img src={ProfilePic} alt="Magnus Strømseng" />
         </div>
     </div>
     <Education />
