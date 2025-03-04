@@ -75,6 +75,34 @@
                 alt="daisyUI ui logo"
                 class="w-8 h-8" /><span>daisyUI</span>
         </LogoSquare>
+        <LogoSquare>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/992px-PyTorch_logo_icon.svg.png?20200318225611"
+                alt="Pytorch"
+                srcset=""
+                class="h-6" /><span>Pytorch</span>
+        </LogoSquare>
+        <LogoSquare>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/2048px-Keras_logo.svg.png"
+                alt="Keras"
+                srcset=""
+                class="h-6" /><span>Keras</span>
+        </LogoSquare>
+        <LogoSquare>
+            <img
+                src="https://avatars.githubusercontent.com/u/57251745?v=4"
+                alt="Optuna"
+                srcset=""
+                class="h-6" /><span>Optuna</span>
+        </LogoSquare>
+        <LogoSquare>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Google_JAX_logo.svg/1024px-Google_JAX_logo.svg.png"
+                alt="Jax"
+                srcset=""
+                class="h-6" /><span>Jax</span>
+        </LogoSquare>
     </LogoCloud>
 
     <div class="prose"><h3>Frameworks</h3></div>
@@ -126,10 +154,23 @@
         <LogoSquare
             ><i class="fa-solid fa-database fa-2xl" /><span>SQL</span
             ></LogoSquare>
+        <LogoSquare>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Neo4j-logo_color.png"
+                alt=""
+                class="h-8" />
+        </LogoSquare>
     </LogoCloud>
 
     <div class="prose"><h3>Other</h3></div>
     <LogoCloud>
+        <LogoSquare>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/70/Docker_logo.png"
+                alt="Docker logo"
+                class="
+             h-8" />
+        </LogoSquare>
         <LogoSquare
             ><i class="fa-brands fa-github fa-2xl" /><span>Git</span
             ></LogoSquare>
