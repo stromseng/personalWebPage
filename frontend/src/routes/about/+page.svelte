@@ -6,6 +6,7 @@
     import Education from "./Education.svelte";
 
     import BodyDiv from "$lib/components/Styling/ContentBody.svelte";
+    import AboutSection from "$lib/components/AboutSection.svelte";
 
     let ProfilePic = "/images/profile-pic.jpg";
 </script>
@@ -14,14 +15,7 @@
     <div class="flex flex-row mb-4 gap-4 md:mb-24">
         <div class="prose">
             <h1>About 🧑🏻</h1>
-            <p class="text-xl">
-                I'm a 22 year old Informatics student from Oslo, Norway. I'm
-                currently in the first year of my master's degree at the
-                Norwegian University of Technology and Science. I'm passionate
-                about technology and I love to learn new things. I'm also a big
-                fan of open source software and I try to contribute to open
-                source projects whenever I can.
-            </p>
+            <AboutSection />
         </div>
         <div class="avatar not-prose self-center hidden md:block">
             <div class="w-24 h-24 rounded-full mx-auto">
